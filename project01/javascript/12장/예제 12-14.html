@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>appendChild()</title>
+</head>
+<body>
+  <ul id="myList">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <p>Append an item to the end of the list</p>
+  <button onclick="myFunction()">Try it</button>
+  <script>
+    function myFunction(){
+      let node = document.createElement("li");
+      let textnode = document.createTextNode("Water");
+      node.appendChild(textnode);
+      document.querySelector("#myList").appendChild(node);
+    }
+  </script>
+</body>
+</html>

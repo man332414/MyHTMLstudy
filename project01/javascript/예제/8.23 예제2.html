@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>드롭다운 메뉴 만들기</title>
+  <script src="https://kit.fontawesome.com/c53a51a6e0.js" crossorigin="anonymous"></script> 
+  <link rel="stylesheet" href="./8.23 예제2.css">
+</head>
+<body>
+  <div id="nav">
+    <div class = container>
+      <ul id="menus">
+        <li>About</li>
+        <li>Service</li>
+        <li>Blog</li>
+        <li id="pSubMenu">Pages <span><i class="fa-solid fa-angle-down"></i></span>
+          <ul class="absolute" id="subMenu">
+            <li>Our Feature</li>
+            <li>Our Cars</li>
+            <li>Our Team</li>
+            <li>Testimonial</li>
+            <li>404Page</li>
+          </ul>
+        </li>
+        <li>Contact</li>
+      </ul>
+    </div>
+  </div>
+  <script>
+    let lis = document.querySelector("#menus").childNodes; // 메뉴 자식 선택
+    console.log(lis); // 정상 출력 확인
+    for(let i=0;i<lis.length;i++){ //각 요소 별 이벤트 리스너 할당
+      lis[i].addEventListener("mouseover", function(){changeColor(lis, i)});
+      lis[i].addEventListener("mouseout", function(){returnColor(lis, i)});
+    }
+    let subMenu = document.querySelector("#pSubMenu"); // 서브메뉴 부모 선택
+    subMenu.addEventListener("mouseover", function(){subMenuBlock()}); // 서브메뉴 등장 이벤트 리스너 할당
+    document.querySelector("#subMenu").addEventListener("mouseout",
+    function(){subMenuReturn()}); // 서브메뉴 숨김 이벤트 리스너 할당
+    
+    function changeColor(lis, i){ //마우스 올라가면 색깔변하기
+      lis[i].style.color = "red"
+      lis[i].style.transition = "all .4s"
+    }
+    function returnColor(lis, i){ //마우스 내리면 원래 색깔로
+      lis[i].style.color = "black"
+    }
+    function subMenuBlock(){ // 서브메뉴 나타나기
+      console.log(document.querySelector("#subMenu"));
+      document.querySelector("#subMenu").style.display = "block";
+    }
+    function subMenuReturn(){ // 서브메뉴 사라지기
+      console.log(subMenu);
+      document.querySelector("#subMenu").style.display = "none";
+    }
+  </script>
+</body>
+</html>

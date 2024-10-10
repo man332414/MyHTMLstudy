@@ -1,0 +1,155 @@
+*{
+  list-style: none;
+  text-decoration: none;
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.container{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.top_back{background-color: #212934;}
+
+.nav_top{
+  color:white;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 15px;
+  font-size: small;
+}
+
+#sns{
+  display: flex;
+}
+
+.fa-brands{
+  margin: 0px 5px 0px 5px;
+}
+
+.menu{
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav{
+  width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.func_icon{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;
+  position: relative;
+}
+
+.badge_icon{
+  position: relative;
+}
+
+.badge{
+  background-color: #e9eef5;
+  padding: 0px 5px 0px 5px;
+  border-radius: 9px;
+  position: absolute;
+  top: -40%;
+  left: 45%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ins_img{
+  height: 500px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url(/project01/templatemo_559_zay_shop/assets/img/banner_img_03.jpg);
+  background-size: 500px;
+  background-repeat: no-repeat;
+  background-position: 1000px;
+  background-color: rgb(239, 239, 239);
+}
+
+#angle{
+  align-content: center;
+  color: #59ab6e;
+  margin: 0px 20px 0px 20px;
+  font-size: 50px;
+}
+
+.headline{
+  align-content: center;
+  width: 60%;
+}
+.three_dots{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(239, 239, 239);
+}
+#dot{
+  color: #59ab6e;
+  margin: 0px 5px 40px 5px;
+}
+
+.month{
+  text-align: center;
+  margin: 20px;
+}
+
+.month_list{
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+#product1{
+  border-radius: 50%;
+  width: 290px;
+  height: 290px;
+  background-image: url(/project01/templatemo_559_zay_shop/assets/img/category_img_01.jpg);
+  background-size: 290px;
+  background-repeat: no-repeat;
+}
+
+#product2{
+  border-radius: 50%;
+  width: 290px;
+  height: 290px;
+  background-image: url(/project01/templatemo_559_zay_shop/assets/img/category_img_02.jpg);
+  background-size: 290px;
+  background-repeat: no-repeat;
+}
+
+#product3{
+  border-radius: 50%;
+  width: 290px;
+  height: 290px;
+  background-image: url(/project01/templatemo_559_zay_shop/assets/img/category_img_03.jpg);
+  background-size: 290px;
+  background-repeat: no-repeat;
+}
+
+.p_text{
+  color: white;
+  background-color: #59ab6e;
+  width: 30%;
+  padding: 5px 0px 5px 0px;
+  border-radius: 5px;
+  margin: 15px auto;
+}
+
+div.month > h1{
+  margin-bottom: 20px;
+}

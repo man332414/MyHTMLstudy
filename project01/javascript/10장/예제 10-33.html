@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>RegExp 객체 메서드</title>
+  <script>
+    let str = "Hello JavaScript";
+    let pattern = /JavaScript/;
+    document.write(pattern.test(str) + "<br>");
+    document.write(pattern.exec(str) + "<br>");
+    console.log(typeof(pattern.exec(str)));
+    document.write(str.match(pattern) + "<br>");
+    console.log(typeof(str.match(pattern)));
+  </script>
+</head>
+<body>
+</body>
+</html>

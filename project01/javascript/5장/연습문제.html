@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>가족 나이 입력받아 평균값 구하기</title>
+  <script>
+    var count = 0;
+
+    var F_age = prompt("아버지 나이를 입력하세요", "숫자를 입력하세요");
+    count += 1
+    var M_age = prompt("어머니 나이를 입력하세요", "숫자를 입력하세요");
+    count += 1
+    var B_age = prompt("형 나이를 입력하세요", "숫자를 입력하세요");
+    count += 1
+    var My_age = prompt("본인 나이를 입력하세요", "숫자를 입력하세요");
+    count += 1
+
+    var intF_age = Number(F_age);
+    var intM_age = Number(M_age);
+    var intB_age = Number(B_age);
+    var intMy_age = Number(My_age);
+
+    var sum = intF_age + intM_age + intB_age + intMy_age;
+    var avr = sum/count;
+
+    document.write("우리가족 나이의 합은 " + sum + "세 <br>");
+    document.write("우리가족 나이의 평균은 " + avr + "세" + "<br>");
+    document.write("평균은 다 함정이야 우리집에 " + avr +"세 인 사람은 없어")
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

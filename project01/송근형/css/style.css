@@ -1,0 +1,259 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+/* 문제 1번 시작 */
+.background{
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+.container{
+  width: 55%;
+  margin: 0 auto;
+}
+
+#nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav>ul{
+  display: flex;
+  cursor: pointer;
+}
+
+
+#nav>ul>li{
+  padding: 25px 0;
+  margin-right: 25px;
+}
+
+.pSM{
+  position: relative;
+}
+
+#subMenu{
+  width: 170px;
+  position: absolute;
+  color: black;
+  top: 100%;
+  border: 1px solid;
+  border-top: 1px solid coral;
+  line-height: 200%;
+  opacity: 0;
+  z-index: 100;
+  background-color: #fff;
+}
+
+#subMenu hr{
+  width: 90%;
+  margin: 0 auto;
+  border: 0;
+  height: 1px;
+  background-color: lightgrey;
+}
+
+#subMenu li{
+  border: 0;
+  padding-left: 10px;
+}
+
+.fa-magnifying-glass{
+  color: lightgrey;
+}
+
+/* 문제 1번 종료 */
+/* 문제 2번 시작 */
+
+.content img{
+  width: 100%;
+}
+
+#msp{
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.content{
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.contentBox{
+  white-space:nowrap;
+  font-size: 0;
+  width: 100%;
+  transition: all .6s;
+}
+  
+.msTextBox{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+}
+
+.msTextBox h5{
+  font-size: 30px;
+  font-weight: 500;
+}
+.msTextBox h1{
+  font-size: 48px;
+}
+
+.msTextBox p{
+  display: inline-block;
+  border: 2px solid coral;
+  width: 150px;
+  height: 50px;
+  align-content: center;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+#buttonColord{
+  background-color: coral;
+}
+
+.slider button{
+  font-size: 50px;
+  position: absolute;
+  top: 50%;
+  transform:translateY(-50%);
+  background-color: #0000004f;
+  color: #fff;
+  width: 62px;
+  transition: background-color .5s;
+  cursor: pointer;
+  border:0;
+}
+
+#msLeftBtn{
+  left: 1%;
+}
+#msRightBtn{
+  right: 1%;
+}
+
+.slider button:hover{
+  background-color: coral;
+}
+
+/* 문제 2번 종료 */
+/* 문제 3번 시작 */
+
+.tab{
+  margin-top: 90px;
+}
+
+.tabHandles{
+  display: flex;
+  justify-content: space-between;
+}
+
+.tabHandles>li{
+  padding: 10px 20px;
+  font-size: 15px;
+  /* border: 1px solid; */
+}
+
+.tab hr{
+  border: 0;
+  height: 2px;
+  background-color: coral;
+}
+
+.active{
+  background-color: coral;
+}
+
+.tabContentes{
+  margin-top: 50px;
+}
+.tabContentes>ul{
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0;
+}
+
+.tabContent img{
+  width: 100%;
+}
+
+.tabContent{
+  width: 33%;
+  position: relative;
+}
+
+.tCTextBox{
+  position: absolute;
+  font-size: 14px;
+  color: #fff;
+  top: 0;
+  background-color: #0f0f0f8f;
+  width: 100%;
+  height: 100%;
+  align-content: center;
+  padding: 25px;
+  opacity: 0;
+}
+
+.tabContent:hover .tCTextBox{
+  opacity: 1;
+}
+
+.tCTextBox h2{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tCTextBox p{
+  font-size: 10px;
+  font-weight: 700;
+  background-color: coral;
+  display: inline;
+  padding: 10px 10px;
+}
+
+#plus{
+  position: absolute;
+  right: 0%;
+  top:0%;
+  width: 30px;
+  height: 30px;
+  background-color: coral;
+  text-align: center;
+  align-content: center;
+}
+
+/* 문제 6번 시작 */
+
+footer{
+  margin-top: 90px;
+  padding-bottom: 90px;
+  background-color: #0f0f0f;
+  color: #fff;
+}
+
+footer .container, .displayFlex{
+  display: flex;
+  justify-content: space-between;
+}
+
+#footerLeft{
+  /* border: 1px solid; */
+  width: 30%;
+}
+
+#footerMid{
+  width: 30%;
+}

@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>Fruitable</title>
+  <script src="https://kit.fontawesome.com/c53a51a6e0.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="./fruitables.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container flex">
+      <div class="flex">
+        <p><i class="fa-solid fa-location-dot"></i> 123 Street, New York</p>
+        <p><i class="fa-solid fa-envelope"></i> Email@Example.com</p>
+      </div>
+      <ul class="flex">
+        <li>Privacy Policy</li> /
+        <li>Terms of Use</li> /
+        <li>Sales and Refunds</li>
+      </ul>
+    </div>
+  </header>
+  <nav class="relative">
+    <div class="container">
+      <div class="flex">
+        <h1 id="logo">Fruitables</h1>
+        <ul class="flex" id="navigation">
+          <li>Home</li>
+          <li>Shop</li>
+          <li>Shop Detail</li>
+          <li class="relative">Pages <i class="fa-solid fa-angle-down"></i>
+            <ul id="sub_menu">
+              <li>Cart</li>
+              <li>Chackout</li>
+              <li>Testimonial</li>
+              <li>404Page</li>
+            </ul>
+        </li>
+        <li>contact</li>
+      </ul>
+      <ul class="flex" id="icons">
+        <li>
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </li>
+        <li id="parent_badge" class="relative">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <p id="badge">3</p>
+        </li>
+        <li>
+          <i class="fa-solid fa-user"></i>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+  <section id="main">
+    <div id="back_img">
+      <div class="container flex" id="main_div">
+        <div id="main_text">
+          <h3>100% organic Foods</h3>
+          <h1>Organic Veggies & Fruits Foods</h1>
+          <form action="#" class="relative">
+            <input type="text" placeholder="Search">
+            <input type="submit" value="Submit Now">
+          </form>
+        </div>
+        <div class="main_slider_div relative">
+          <input type="radio" name="main_slide" id="ms_a" checked>
+          <input type="radio" name="main_slide" id="ms_b">
+          <ul class="main_slider_ul">
+            <li class="relative">
+              <img src="./fruitables-1.0.0/img/hero-img-1.png" alt="fruits_basket" id="fruits_basket">
+              <h3 id="text_on_img">Fruites</h3>
+            </li>
+            <li class="relative">
+              <img src="./fruitables-1.0.0/img/hero-img-2.jpg" alt="vegetables" id="vegetables">
+              <h3 id="text_on_img">Vegetables</h3>
+            </li>
+            <div class="main_slide_control">
+              <div class="slide_ms_a">
+                <label for="ms_b" class="main_left"><i class="fa-solid fa-angle-left"></i></label>
+                <label for="ms_b" class="main_right"><i class="fa-solid fa-angle-right"></i></label>
+              </div>
+              <div class="slide_ms_b">
+                <label for="ms_a" class="main_left"><i class="fa-solid fa-angle-left"></i></label>
+                <label for="ms_a" class="main_right"><i class="fa-solid fa-angle-right"></i></label>
+              </div>
+            </div>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="service">
+    <div class="container flex">
+      <div id="service_box">
+        <i class="fa-solid fa-car-side"></i>
+        <div>
+          <h3>Free Shipping</h3>
+          <p>Free on order over $300</p>
+        </div>
+      </div>
+      <div id="service_box">
+        <i class="fa-solid fa-user-shield"></i>
+        <div>
+          <h3>Security Pament</h3>
+          <p>100% security payment</p>
+        </div>
+      </div>
+      <div id="service_box">
+        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+        <div>
+          <h3>30 Day Return</h3>
+          <p>30day money guarantee</p>
+        </div>
+      </div>
+      <div id="service_box">
+        <i class="fa-solid fa-phone"></i>
+        <div>
+          <h3>24/7 Support</h3>
+          <p>support every time fast</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="product">
+    <div class="container">
+      <div>
+        <div class="flex" id="product_menu">
+          <h2>Our Organic Products</h2>
+          <div>
+            <ul class="prod_tab flex">
+              <label for="p_a" class="p_a">
+                <li id="products_menu">All Products</li>
+              </label>
+              <label for="p_b" class="p_b">
+                <li id="products_menu">Vegetables</li>
+              </label>
+              <label for="p_c" class="p_c">
+                <li id="products_menu">Fruits</li>
+              </label>
+              <label for="p_d" class="p_d">
+                <li id="products_menu">Bread</li>
+              </label>
+              <label for="p_e" class="p_e">
+                <li id="products_menu">Meat</li>
+              </label>
+            </ul>
+          </div>
+        </div>
+        <div class="flex_t" id="content_wraper">
+          <input type="radio" name="product_tab" id="p_a" checked>
+          <input type="radio" name="product_tab" id="p_b">
+          <input type="radio" name="product_tab" id="p_c">
+          <input type="radio" name="product_tab" id="p_d">
+          <input type="radio" name="product_tab" id="p_e">
+          <div class="content_box all_product meat">
+            <div class="relative">
+              <p class="floting_text ft_fruit">Fruits</p>
+              <img src="./fruitables-1.0.0/img/best-product-5.jpg" alt="Grapes">
+            </div>
+            <div>
+              <h3>Grapes</h3>
+              <p>Lorem lpsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+              <div class="flex">
+                <h4>$4.99 / kg</h4>
+                <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="content_box all_product fruits">
+            <div class="relative">
+              <p class="floting_text ft_fruit">Grapes</p>
+              <img src="./fruitables-1.0.0/img/best-product-5.jpg" alt="Grapes">
+            </div>
+            <div>
+              <h3>Grapes</h3>
+              <p>Lorem lpsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+              <div class="flex">
+                <h4>$4.99 / kg</h4>
+                <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="content_box all_product fruits">
+            <div class="relative">
+              <p class="floting_text ft_fruit">Fruits</p>
+              <img src="./fruitables-1.0.0/img/best-product-2.jpg" alt="Raspberries">
+            </div>
+            <div>
+              <h3>Raspberries</h3>
+              <p>Lorem lpsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+              <div class="flex">
+                <h4>$4.99 / kg</h4>
+                <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="content_box all_product vegetables">
+            <div class="relative">
+              <p class="floting_text ft_fruit">Fruits</p>
+              <img src="./fruitables-1.0.0/img/best-product-4.jpg" alt="Apricots">
+            </div>
+            <div>
+              <h3>Apricots</h3>
+              <p>Lorem lpsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+              <div class="flex">
+                <h4>$4.99 / kg</h4>
+                <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="content_box all_product vegetables">
+            <div class="relative">
+              <p class="floting_text ft_fruit">Fruits</p>
+              <img src="./fruitables-1.0.0/img/best-product-3.jpg" alt="Banana">
+            </div>
+            <div>
+              <h3>Banana</h3>
+              <p>Lorem lpsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+              <div class="flex">
+                <h4>$4.99 / kg</h4>
+                <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="content_box all_product bread">
+            <div class="relative">
+              <p class="floting_text ft_fruit">Fruits</p>
+              <img src="./fruitables-1.0.0/img/best-product-1.jpg" alt="Oranges">
+            </div>
+            <div>
+              <h3>Oranges</h3>
+              <p>Lorem lpsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+              <div class="flex">
+                <h4>$4.99 / kg</h4>
+                <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="content_box all_product bread">
+            <div class="relative">
+              <p class="floting_text ft_fruit">Fruits</p>
+              <img src="./fruitables-1.0.0/img/best-product-2.jpg" alt="Raspberries">
+            </div>
+            <div>
+              <h3>Raspberries</h3>
+              <p>Lorem lpsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+              <div class="flex">
+                <h4>$4.99 / kg</h4>
+                <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> <span>Add to cart</a>
+              </div>
+            </div>
+          </div>
+          <div class="content_box all_product meat">
+            <div class="relative">
+              <p class="floting_text ft_fruit">Fruits</p>
+              <img src="./fruitables-1.0.0/img/best-product-6.jpg" alt="apple">
+            </div>
+            <div>
+              <h3>Apple</h3>
+              <p>Lorem lpsum dolor sit amet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+              <div class="flex">
+                <h4>$4.99 / kg</h4>
+                <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="feature">
+    <div class="container flex">
+      <div class="relative yellow" id="background-color">
+        <div>
+          <img src="./fruitables-1.0.0/img/featur-1.jpg" alt="apple_basket">
+        </div>
+        <div class="green" id="floting_tbox">
+          <h4 class="white_t">Fresh Apples</h4>
+          <h3>20% OFF</h3>
+        </div>
+      </div>
+      <div class="relative black" id="background-color">
+        <div>
+          <img src="./fruitables-1.0.0/img/featur-2.jpg" alt="strawberrie">
+        </div>
+        <div class="white" id="floting_tbox">
+          <h4 class="green_t">Tasty Fruits</h4>
+          <h3>free delivery</h3>
+        </div>
+      </div>
+      <div class="relative green" id="background-color">
+        <div>
+          <img src="./fruitables-1.0.0/img/featur-3.jpg" alt="broccoli">
+        </div>
+        <div class="yellow" id="floting_tbox">
+          <h4 class="white_t">Exotic Vegetable</h4>
+          <h3>Discount $30</h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="fresh_slide">
+    <div class="container">
+      <input type="radio" name="fresh_slide" id="fs_a" checked>
+      <input type="radio" name="fresh_slide" id="fs_b">
+      <div class="flex" id="fresh_slide_top">
+        <h1>Fresh Organic Vegetables</h1>
+        <div id="fs_labels" class="relative">
+          <div class="fs_a">
+            <label for="fs_b" class="fs_left"><i class="fa-solid fa-arrow-left"></i></label>
+            <label for="fs_b" class="fs_right"><i class="fa-solid fa-arrow-right"></i></label>
+          </div>
+          <div class="fs_b">
+            <label for="fs_a" class="fs_left"><i class="fa-solid fa-arrow-left"></i></label>
+            <label for="fs_a" class="fs_right"><i class="fa-solid fa-arrow-right"></i></label>
+          </div>
+        </div>
+      </div>
+      <div id="fresh_content_wraper">
+        <div class="content_box">
+          <div class="relative">
+            <p class="floting_text ft_vegetable">Vegetable</p>
+            <img src="./fruitables-1.0.0/img/fruite-item-6.jpg" alt="Parsely">
+          </div>
+          <div>
+            <h3>Parsely</h3>
+            <p>Lorem lpsum dolor sit arnet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+            <div class="flex">
+              <h4>$4.99 / kg</h4>
+              <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="content_box">
+          <div class="relative">
+            <p class="floting_text ft_vegetable">Vegetable</p>
+            <img src="./fruitables-1.0.0/img/fruite-item-1.jpg" alt="Tomato">
+          </div>
+          <div>
+            <h3>Tomato</h3>
+            <p>Lorem lpsum dolor sit arnet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+            <div class="flex">
+              <h4>$4.99 / kg</h4>
+              <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="content_box">
+          <div class="relative">
+            <p class="floting_text ft_vegetable">Vegetable</p>
+            <img src="./fruitables-1.0.0/img/fruite-item-3.jpg" alt="Banana">
+          </div>
+          <div>
+              <h3>Parsely</h3>
+              <p>Lorem lpsum dolor sit arnet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+              <div class="flex">
+                <h4>$7.99 / kg</h4>
+                <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="content_box">
+          <div class="relative">
+            <p class="floting_text ft_vegetable">Vegetable</p>
+            <img src="./fruitables-1.0.0/img/fruite-item-4.jpg" alt="bellpapper">
+          </div>
+          <div>
+            <h3>Bell Papper</h3>
+            <p>Lorem lpsum dolor sit arnet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+            <div class="flex">
+              <h4>$7.99 / kg</h4>
+              <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="content_box">
+          <div class="relative">
+            <p class="floting_text ft_vegetable">Vegetable</p>
+            <img src="./fruitables-1.0.0/img/fruite-item-5.jpg" alt="potato">
+          </div>
+          <div>
+            <h4>Potato</h4>
+            <p>Lorem lpsum dolor sit arnet consectetur adipisicing elit sed do eiusmod te incididunt</p>
+            <div class="flex">
+              <h3>$7.99 / kg</h3>
+              <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="fresh">
+    <div class="back_color">
+      <div class="container flex">
+        <div class="fresh_text">
+          <h1 class="big_latter">Fresh Exotic Fruits</h1>
+          <h1 class="middle_latter">in Our Store</h1>
+          <p>The generated Lorem lpsum is therefore always free from repetition injected humour, or non-characteristic
+          words etc.</p>
+          <div id="buy_button">BUY</div>
+        </div>
+        <div class="relative">
+          <img src="./fruitables-1.0.0/img/baner-1.png" alt="">
+          <div class="latter_box relative">
+            <span class="big_latter">1</span>
+            <span class="middle_latter">50$</span><br>
+            <span class="small_latter">kg</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="bestseller">
+    <div class="container">
+      <div class="center">
+        <h1>Bestseller Products</h1>
+        <p>Latin words, combined with a handful of model sentence structures, to generate Lorem lpsum which looks
+        reasonable.</p>
+      </div>
+      <div class="flex" id="bestseller_list">
+        <div class="content_box_v flex">
+          <div class="bestseller_img_box">
+            <img src="./fruitables-1.0.0/img/best-product-1.jpg" alt="orange">
+          </div>
+          <div class="bestseller_text_box">
+            <h3>Organic Tomato</h3>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_off"></i>
+            <h4>$3.12</h4>
+            <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+          </div>
+        </div>
+        <div class="content_box_v flex">
+          <div class="bestseller_img_box">
+            <img src="./fruitables-1.0.0/img/best-product-2.jpg" alt="raspberrie">
+          </div>
+          <div class="bestseller_text_box">
+            <h3>Organic Tomato</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_off"></i>
+              <h4>$3.12</h4>
+              <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+            </div>
+          </div>
+        </div>
+        <div class="content_box_v flex">
+          <div class="bestseller_img_box">
+            <img src="./fruitables-1.0.0/img/best-product-3.jpg" alt="banana">
+          </div>
+          <div class="bestseller_text_box">
+            <h3>Organic Tomato</h3>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_off"></i>
+            <h4>$3.12</h4>
+            <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+          </div>
+        </div>
+        <div class="content_box_v flex">
+          <div class="bestseller_img_box">
+            <img src="./fruitables-1.0.0/img/best-product-4.jpg" alt="">
+          </div>
+          <div class="bestseller_text_box">
+            <h3>Organic Tomato</h3>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_off"></i>
+            <h4>$3.12</h4>
+            <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+          </div>
+        </div>
+        <div class="content_box_v flex">
+          <div class="bestseller_img_box">
+            <img src="./fruitables-1.0.0/img/best-product-5.jpg" alt="grape">
+          </div>
+          <div class="bestseller_text_box">
+            <h3>Organic Tomato</h3>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_off"></i>
+            <h4>$3.12</h4>
+            <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+          </div>
+        </div>
+        <div class="content_box_v flex">
+          <div class="bestseller_img_box">
+            <img src="./fruitables-1.0.0/img/best-product-6.jpg" alt="apple">
+          </div>
+          <div class="bestseller_text_box">
+            <h3>Organic Tomato</h3>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_on"></i>
+            <i class="fa-solid fa-star" id="star_point_off"></i>
+            <h4>$3.12</h4>
+            <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <section class="bestseller_big">
+    <div class="container flex">
+      <div id="bs_b">
+        <div><img src="./fruitables-1.0.0/img/best-product-1.jpg" alt="orange"></div>
+        <div>
+          <h3>Organic Tomato</h3>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_off"></i>
+          <h4><span>3</span>.12 <span>$</span></h4>
+          <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+        </div>
+      </div>
+      <div id="bs_b">
+        <div><img src="./fruitables-1.0.0/img/best-product-2.jpg" alt="raspberrie"></div>
+        <div>
+          <h3>Organic Tomato</h3>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_off"></i>
+          <h4><span>3</span>.12 <span>$</span></h4>
+          <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+        </div>
+      </div>
+      <div id="bs_b">
+        <div><img src="./fruitables-1.0.0/img/best-product-3.jpg" alt="banana"></div>
+        <div>
+          <h3>Organic Tomato</h3>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_off"></i>
+          <h4><span>3</span>.12 <span>$</span></h4>
+          <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+        </div>
+      </div>
+      <div id="bs_b">
+        <div><img src="./fruitables-1.0.0/img/best-product-4.jpg" alt=""></div>
+        <div>
+          <h3>Organic Tomato</h3>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_on"></i>
+          <i class="fa-solid fa-star" id="star_point_off"></i>
+          <h4><span>3</span>.12 <span>$</span></h4>
+          <a href="#" id="addtocart"><i class="fa-solid fa-bag-shopping"></i> Add to cart</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="quality_of_service">
+    <div class="container flex qos_back_color">
+      <div class="qos_box">
+        <i class="fa-solid fa-users"></i>
+        <h2 id="colored">SATISFIED COSTOMERS</h2>
+        <h3>1963</h3>
+      </div>
+      <div class="qos_box">
+        <i class="fa-solid fa-users"></i>
+        <h2 id="colored">QUALITY OF SERVICE</h2>
+        <h3>99%</h3>
+      </div>
+      <div class="qos_box">
+        <i class="fa-solid fa-users"></i>
+        <h2 id="colored">QUALITY CERTIFICATES</h2>
+        <h3>33</h3>
+      </div>
+      <div class="qos_box">
+        <i class="fa-solid fa-users"></i>
+        <h2 id="colored">AVAILABLE PRODUCTS</h2>
+        <h3>789</h3>
+      </div>
+    </div>
+  </section>
+  <section id="voice_of_costomers">
+    <div class="container">
+      <input type="radio" name="voice_silde" id="vs_a" checked>
+      <input type="radio" name="voice_silde" id="vs_b" >
+      <input type="radio" name="voice_silde" id="vs_c">
+      <div id="voice_of_costomers_head">
+        <h4>Our Testimonial</h4>
+        <h1>Our Client Saying!</h1>
+      </div>
+      <div class="relative" id="vos_labels">
+        <div class="vs_a">
+          <label for="vs_c" class="vs_left"><i class="fa-solid fa-arrow-left"></i></label>
+          <label for="vs_b" class="vs_right"><i class="fa-solid fa-arrow-right"></i></label>
+        </div>
+        <div class="vs_b">
+          <label for="vs_a" class="vs_left"><i class="fa-solid fa-arrow-left"></i></label>
+          <label for="vs_c" class="vs_right"><i class="fa-solid fa-arrow-right"></i></label>
+        </div>
+        <div class="vs_c">
+          <label for="vs_b" class="vs_left"><i class="fa-solid fa-arrow-left"></i></label>
+          <label for="vs_a" class="vs_right"><i class="fa-solid fa-arrow-right"></i></label>
+        </div>
+      </div>
+      <div id="voice_profiles">
+        <div id="voice_profile_box">
+          <p>a Lorem lpsum sumply dummy text of the printing lpsum has been the industry's standard dummy text ever since
+            the 1500s,</p>
+          <hr>
+          <div class="flex">
+            <div>
+              <img src="./fruitables-1.0.0/img/testimonial-1.jpg" alt="costomer">
+            </div>
+            <div class="voice_text_box">
+              <h3>Client Name</h3>
+              <p>profession</p>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+            </div>
+            <div><i class="fa-solid fa-quote-right"></i></div>
+          </div>
+        </div>
+        <div id="voice_profile_box">
+          <p>b Lorem lpsum sumply dummy text of the printing lpsum has been the industry's standard dummy text ever since
+            the 1500s,</p>
+          <hr>
+          <div class="flex">
+            <div>
+              <img src="./fruitables-1.0.0/img/testimonial-1.jpg" alt="costomer">
+            </div>
+            <div class="voice_text_box">
+              <h3>Client Name</h3>
+              <p>profession</p>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_off"></i>
+            </div>
+            <div><i class="fa-solid fa-quote-right"></i></div>
+          </div>
+        </div>
+        <div id="voice_profile_box">
+          <p>c Lorem lpsum sumply dummy text of the printing lpsum has been the industry's standard dummy text ever since
+            the 1500s,</p>
+          <hr>
+          <div class="flex">
+            <div>
+              <img src="./fruitables-1.0.0/img/testimonial-1.jpg" alt="costomer">
+            </div>
+            <div class="voice_text_box">
+              <h3>Client Name</h3>
+              <p>profession</p>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+            </div>
+            <div><i class="fa-solid fa-quote-right"></i></div>
+          </div>
+        </div>
+        <div id="voice_profile_box">
+          <p>d Lorem lpsum sumply dummy text of the printing lpsum has been the industry's standard dummy text ever since
+            the 1500s,</p>
+          <hr>
+          <div class="flex">
+            <div>
+              <img src="./fruitables-1.0.0/img/testimonial-1.jpg" alt="costomer">
+            </div>
+            <div class="voice_text_box">
+              <h3>Client Name</h3>
+              <p>profession</p>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_on"></i>
+              <i class="fa-solid fa-star" id="star_point_off"></i>
+            </div>
+            <div><i class="fa-solid fa-quote-right"></i></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer>
+    <div class="container">
+      <div class="flex" id="footer_top">
+        <div id="footer_logo">
+          <h1>Fruitables</h1>
+          <p>Fresh Product</p>
+        </div>
+        <div class="relative" id="subscribe_us">
+          <form action="#bottom">
+            <input type="text" placeholder="Your Email">
+            <input type="submit" value="Subscribe Now">
+          </form>
+        </div>
+        <div class="footer_icon">
+          <a href="https://x.com"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
+          <a href="https://linkedin.com"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+      </div>
+      <hr>
+      <div class="flex" id="footer_mid">
+        <ul id="first_list">
+          <li>
+            <h4>Why People Like us</h4>
+          </li>
+          <li>typesetting, remaining essentially unchanged. It was popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.
+          </li>
+          <li>
+            <a href="#" id="addtocart">Read More</a>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <h4>Shop Info</h4>
+          </li>
+          <li>About Us</li>
+          <li>Contect Us</li>
+          <li>Privacy Policy</li>
+          <li>Terms & Condition</li>
+          <li>Return Policy</li>
+          <li>FAQs & Help</li>
+        </ul>
+        <ul>
+          <li>
+            <h4>Account</h4>
+          </li>
+          <li>My Account</li>
+          <li>Shopping Cart</li>
+          <li>Wishlist</li>
+          <li>Order History</li>
+          <li>International Orders</li>
+        </ul>
+        <ul>
+          <li>
+            <h4>Contact</h4>
+          </li>
+          <li>Address: 1429 Netus Rd, NY 48247</li>
+          <li>Email: Example@gmail.com</li>
+          <li>Phone: +0123 4567 8910</li>
+          <li>Payment Accepted</li>
+          <li><img src="./fruitables-1.0.0/img/payment.png" alt=""></li>
+        </ul>
+      </div>
+      <div class="flex" id="footer_bottom">
+        <div>
+          <p><i class="fa-solid fa-copyright"></i> <a href="#">Your Site Name</a>, All right reserved.</p>
+        </div>
+        <div>
+          <p>Designed By <a href="#">HTML Codex </a>Distributed By <a href="https://themewagon.com">ThemeWagon</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

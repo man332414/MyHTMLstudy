@@ -1,0 +1,66 @@
+/*요소를 보기위한 테스트 코드
+img{border: 1px solid red;}
+*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+label {
+  background-color: red;
+}
+
+/*라디오 버튼 선택*/
+/* #a,#b,#c,#d{
+  display: none;
+} */
+
+input[type="radio"]{
+  display: none;
+}    
+
+#slider_box{
+  width: 50%; /*슬라이딩 되는 것을 보여주기 위해서 작게설정*/
+  margin: 20px auto; /*상단 마진은 보기 편하라고설정, 양옆 오토는 중앙정렬*/ 
+  overflow: hidden; /*넘치는 자식요소를 일단은 보여줌, 나중에 숨김*/
+  white-space: nowrap;/*이속성을 통하여 자식이 부모를 넘어갈 수 있게함*/
+  border: 1px solid red;
+}
+ul{
+  font-size: 0px;
+} 
+li{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  transition: all 2s;
+}
+li .slide{
+  width: 100%;
+}
+
+li label {
+  position: absolute;
+  top:50%;
+  transform: translateY(-50%); 
+  width: 10%;  
+}
+li label.left {
+  left: 0;
+}
+li label.right {
+  right:0;
+}
+
+li label img{
+  width: 100%;
+}
+
+/*애니메이션*/
+#a:checked ~ #slider_box li {transform: translateX(0%);}
+#b:checked ~ #slider_box li {transform: translateX(-100%);}
+#c:checked ~ #slider_box li {transform: translateX(-200%);}
+#d:checked ~ #slider_box li {transform: translateX(-300%);}

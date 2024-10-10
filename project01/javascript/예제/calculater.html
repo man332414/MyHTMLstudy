@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>calculater</title>
+  <link rel="stylesheet" href="./calculater.css">
+  <script>
+    function inputFunc(){
+      var first_num = Number(document.querySelector('#first_num').value);
+      var second_num = Number(document.querySelector('#second_num').value);
+      var operator = document.querySelector("#operator").value;
+      var answer;
+      
+      switch (operator){
+        case '+' :
+          answer = first_num + second_num;
+          break;
+        case '-' :
+          answer = first_num - second_num;
+          break;
+        case '*' :
+          answer = first_num * second_num;
+          break;
+        case '/' :
+          answer = first_num / second_num;
+          break;
+      }
+      document.querySelector('#answer').innerHTML = '결과: ' + answer;
+    }    
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="calculater_box">
+      <ul>
+        <li>
+          <input type="number" name="calculater" id="first_num" placeholder="첫 번째 숫자">
+        </li>
+        <li>
+          <input type="number" name="calculater" id="second_num" placeholder="두 번째 숫자">
+        </li>
+        <li>
+          <select name="operator" id="operator">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">x</option>
+            <option value="/">/</option>
+          </select>
+        </li>
+        <li>
+          <button onclick="inputFunc()">계산</button>
+        </li>
+        <p id="answer"></p>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

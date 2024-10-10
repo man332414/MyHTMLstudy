@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>RegExp 객체 메서드_플레그</title>
+  <script>
+    let str = "Hello \n JavaScript javaScript JavaScript \n javaScript";
+    let ptn01 = /javascript/i;
+    let ptn02 = /javaScript/g;
+    console.log(str);
+    console.log(ptn01 + " : " + str.match(ptn01));
+    console.log(ptn02 + " : " + str.match(ptn02));
+  </script>
+</head>
+<body>
+</body>
+</html> 

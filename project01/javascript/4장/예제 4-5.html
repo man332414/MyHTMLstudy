@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>HTML 데이터 출력 방법_console</title>
+  <style>
+    *{list-style:none;}
+  </style>
+  <script>
+    window.onload = function(){
+      document.querySelector('#demo').innerHTML = 'innerHTML 테스트';
+    }
+    document.write('<h1> document.write 테스트 </h1>');
+    //window.alert('alert 테스트');
+    //alert('alert 테스트2');
+    console.log('console 테스트');
+    if(confirm('제출하시겠습니까?')){
+      alert("정상적으로 제출되었습니다.");
+      } else{
+        alert("그렇게 취소를 해야 속이 후련했냐?");
+        }
+        var age = prompt("나이를 입력하세요", "숫자를 입력하세요")
+  </script>
+</head>
+<body>
+  <ul>
+    <li> <h2> hello world! </h2>
+      <h1 id="demo"></h1>
+    </li>
+  </ul>
+</body>
+</html>  

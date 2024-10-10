@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>8.19. 예제 6 (객체)</title>
+  <script>
+    function Hero(name, job, item){
+      this.name = name;
+      this.job = job;
+      this.bag = new Array;
+    }
+    hong = new Hero("홍길동", "모험가");
+
+    let box = [
+    {content : "금화", isOpend :"false"},
+    {content : "보석", isOpend :"false"},
+    {content : "마법의 물약", isOpend :"false"},
+    {content : "낡은 책", isOpend :"false"},
+    {content : "미지의 물건", isOpend :"false"}
+    ];
+    console.log(box);
+    
+    function get(box){
+      /*for(let i in box){
+        let chest = box[i];
+        if(chest.isOpend == "false"){
+          chest.isOpend = true;
+          hong.bag.push(chest.content);
+          console.log(`${hong.name}이(가) ${chest.content}이 들어있는 상자를 열었습니다.`);
+          chest.content = "empty";
+        }
+      }
+    }*/
+      for(let i = 0; i<box.length; i++){
+        let chest = box[i];
+        if(chest.isOpend == "false"){
+          chest.isOpend = true;
+          hong.bag.push(chest.content);
+          console.log(`${hong.name}이(가) ${chest.content}이 들어있는 상자를 열었습니다.`);
+          chest.content = "empty";
+        }
+      }
+    }
+    get(box);
+    console.log(hong);
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

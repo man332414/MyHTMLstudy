@@ -1,0 +1,84 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+.wrapper{
+  width: 100%;
+  /* height: 400px; */
+  text-align: center;
+  align-content: end;
+}
+
+/* .position_absolute{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+} */
+
+form{
+  margin: 0 auto;
+  background-color: royalblue;
+  width: 400px;
+  height: 70px;
+  align-content: center;
+}
+input[type=text]{
+  border: 1px solid royalblue;
+  width: 250px;
+  padding: 0 20px;
+  height: 60%;
+}
+form button{
+  border: 1px solid royalblue;
+  width: 80px;
+  height: 60%;
+  cursor: pointer;
+}
+form button:active{
+  background-color: darkgrey;
+}
+
+li{
+  margin: 0 auto;
+  background-color: lightgray;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  cursor: grab;
+}
+li:nth-child(2n){
+  background-color: ghostwhite;
+}
+li:active{
+  cursor: grabbing;
+}
+#itemList{
+  width: 100%;
+  margin: 0 auto;
+}
+
+#delBtn{
+  cursor: pointer;
+}
+
+#dropBox{
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border: 2px dashed maroon;
+  flex-wrap: wrap;
+}
+
+#boxes{
+  margin: 0 auto;
+  width: 50%;
+  border: 1px solid;
+  display: flex;
+  justify-content: space-evenly;
+}

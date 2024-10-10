@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>overflow</title>
+  <style>
+    .parent1{
+      width: 300px;
+      height: 250px;
+      border:4px solid;
+      overflow: visible;
+    }
+    .parent2{
+      width: 300px;
+      height: 250px;
+      border:4px solid;
+      overflow: hidden;
+    }
+    .parent3{
+      width: 300px;
+      height: 250px;
+      border:4px solid;
+      overflow: scroll;
+    }
+    .parent4{
+      width: 300px;
+      height: 250px;
+      border:4px solid;
+      overflow: auto;
+    }
+    .child{
+      width: 100px;
+      height: 100px;
+      background : green;
+      border: 4px solid red;
+      display:flex;
+      justify-content:center;
+      align-items: center;
+      font-size:40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="parent1">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+  </div>
+  <div class="parent2">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+  </div>
+  <div class="parent3">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+  </div>  
+  <div class="parent4">
+    <div class="child">1</div>
+    <div class="child">2</div>
+    <div class="child">3</div>
+  </div>
+</body>
+</html>

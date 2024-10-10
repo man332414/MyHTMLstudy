@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>creatElement()</title>
+</head>
+<body>
+  <p>creat new button element with text</p>
+  <button onclick="myFunction()">Try it</button>
+  <script>
+    function myFunction(){
+      let btn = document.createElement("button");
+      let t = document.createTextNode("click me");
+
+      btn.appendChild(t);
+      document.body.appendChild(btn);
+    }
+  </script>
+</body>
+</html>

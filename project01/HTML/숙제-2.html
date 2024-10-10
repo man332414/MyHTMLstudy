@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>회원 가입 양식</title>
+</head>
+<body>
+  <fieldset style="width: 30%;">
+  <legend><h3>회원 가입 양식</h3></legend>
+  <form action="#">
+  <table>
+    <tr>
+      <th align="left">아이디</th>
+      <td><input type="text" name="ID" autofocus required></td>
+    </tr>
+    <tr>
+      <th align="left">비밀번호</th>
+      <td><input type="password" name="psw" required></td>
+    </tr>
+    <tr>
+      <th align="left">비밀번호 확인</th>
+      <td><input type="password" name="psw" required></td>
+    </tr>
+    <tr>
+      <th align="left">이름</th>
+      <td><input type="text" name="name" required maxlength="4"></td>
+    </tr>
+    <tr>
+      <th align="left">성별</th>
+      <td>
+        <input type="radio" name="gender" value="male" checked> 남성
+        <input type="radio" name="gender" value="female"> 여성
+      </td>
+    </tr>
+    <tr>
+      <th align="left">전화번호</th>
+      <td><select name="f_num">
+        <option value="02" >02</option>
+        <option value="055">055</option>
+        <option value="031">031</option>
+        <option value="010">010</option>
+        <option value="011">011</option>
+        <option value="016">016</option>
+        <option value="017">017</option>
+      </select>
+      - <input type="tel" name="mid_num" style="width: 50px;" required maxlength="4"> - <input type="tel" name="last_num" style="width: 50px;" required maxlength="4"></td>
+    </tr>
+    <tr>
+      <th align="left">이메일</th>
+      <td><input type="text" name="e_mail_id"> @ 
+        <select name="common_email">
+          <option value="null">선택</option>
+          <option value="naver.com">naver.com</option>
+          <option value="google.com">google.com</option>
+          <option value="daum.com">daum.com</option>
+        </select></td>
+    </tr>
+    <tr>
+      <th align="left">자기소개</th>
+      <td><textarea name="textarea" rows="5" cols="23"></textarea></td>
+    </tr>
+    </table>
+    <input type="submit" value="제출">
+    <input type="reset" value="초기화">
+  </form>
+  </fieldset>
+</body>
+</html>

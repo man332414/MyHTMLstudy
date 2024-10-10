@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>여행 준비물 점검 목록</title>
+  <link rel="stylesheet" href="./addtextbar.css">
+  <script>
+    function addBtn(){
+      let ipt = document.querySelector("#item").value;
+      document.querySelector("#item").value = "";
+      addList(ipt);
+    }
+    function addList(ipt){
+      let list = document.querySelector("#itemList");
+      let addList = document.createElement("li")
+      let listContent = document.createTextNode(ipt);
+      
+      addList.appendChild(listContent);
+      list.appendChild(addList);
+      console.log(list)
+      //document.querySelector("#itemList").innerHTML = list
+      
+      let closeBtnBox = document.createElement("div");
+      let closeBtn = document.createTextNode("X")
+      closeBtnBox.appendChild(closeBtn);
+      //console.log(closeBtnBox);
+      addList.appendChild(closeBtnBox);
+      let deleteList = document.querySelectorAll("li div");
+      //console.log(deleteList);
+      deleteList.forEach(function(div){div.setAttribute("id","deleteButton");});
+      deleteList.forEach(function(div){div.addEventListener("click", deleteFunction(list, addList));});
+    }
+    function deleteFunction(list, addList){
+      console.log(addList);
+      list.removeChild(addList);
+    }
+  </script>
+</head>
+
+<body>
+  <div class="position_absolute">
+    <div class="wrapper">
+      <h1>여행 준비물 점검 목록</h1>
+      <form>
+        <input type="text" id="item" autofocus="true" placeholder="value를 입력해 주세요.">
+        <button type="button" id="add" class="addBtn" onclick="addBtn()">추가</button>
+      </form>
+      <ul id="itemList">
+        아무 내용도 없습니다.
+      </ul>
+    </div>
+  </div>
+</body>
+
+</html>

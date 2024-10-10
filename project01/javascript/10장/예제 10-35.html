@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>RegExp 객체 메서드_표현식_수량한정자</title>
+  <script>
+    let str01 = "ab";
+    let str02 = "abc";
+    let str03 = "abcccc";
+    let ptn01 = /abc+/ig;
+    let ptn02 = /abc*/ig;
+    let ptn03 = /abc?/ig;
+
+    document.write("1. ab : " + str01.match(ptn01)+"<br>");
+    document.write("2. abc : " + str02.match(ptn01)+"<br>");
+    document.write("3. abcccc : " + str03.match(ptn01)+"<br>");
+    document.write("<br>");
+    document.write("1. ab : " + str01.match(ptn02)+"<br>");
+    document.write("2. abc : " + str02.match(ptn02)+"<br>");
+    document.write("3. abcccc : " + str03.match(ptn02)+"<br>");
+    document.write("<br>");
+    document.write("1. ab : " + str01.match(ptn03)+"<br>");
+    document.write("2. abc : " + str02.match(ptn03)+"<br>");
+    document.write("3. abcccc : " + str03.match(ptn03)+"<br>");
+    document.write("<br>");
+
+
+
+  </script>
+</head>
+<body>
+</body>
+</html> 

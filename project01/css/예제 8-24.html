@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>무한 반복하며 좌우로 이동하는 박스 만들기</title>
+  <style>
+    div{
+      width: 100px;
+      height: 100px;
+      background:red;
+      position:relative;
+      animation:boxmove 5s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+    }
+    @keyframes boxmove{
+    from{left:0px;}
+    to{left:300px;}
+    }
+  </style>
+</head>
+<body>
+  <div>애니메이션박스</div>
+</body>
+</html>

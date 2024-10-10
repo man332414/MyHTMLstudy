@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>fixed</title>
+  <style>
+    body{
+      height:4000px;
+    }
+    .grand-parent{
+      width:400px;
+      height:300px;
+      padding:30px 100px 100px 30px;
+      border:4px dashed red;
+    }
+    .parent{
+      width:400px;
+      height:300px;
+      border:4px dashed blue;
+      position:relative;
+    }
+    .child{
+      width:120px;
+      height:80px;
+      border:4px dashed green;
+      background:tomato;
+    }
+    .absolute{
+      position:fixed;
+      top:00px;
+      left:000px;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="grand-parent">
+    <div class="parent">
+      <div class="child">1</div>
+      <div class="child absolute">2</div>
+      <div class="child">3</div>
+    </div>
+  </div>
+</body>
+</html>

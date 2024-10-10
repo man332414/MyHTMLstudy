@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>항목 필터링</title>
+  <style>
+    * {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      text-decoration: none;
+    }
+
+    .container {
+      margin: 0 auto;
+      width: 40%;
+      text-align: center;
+    }
+
+    input,
+    li {
+      height: 40px;
+      width: 250px;
+      border: 1px solid;
+      align-content: center;
+      padding: 0 10px;
+    }
+
+    ul {
+      width: 250px;
+      margin: 0 auto;
+    }
+
+    li:nth-child(2n) {
+      background-color: lightgray;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>항목 필터링</h1>
+    <input type="text" id="userInput" placeholder="검색어를 입력하세요">
+    <ul>
+      <li>사과</li>
+      <li>사과과</li>
+      <li>바나나</li>
+      <li>바나나나</li>
+      <li>체리</li>
+      <li>체리리</li>
+      <li>포도</li>
+      <li>포도도</li>
+      <li>키위</li>
+      <li>키위위</li>
+    </ul>
+  </div>
+  <script>
+    let input = document.querySelector("#userInput");
+    let lis = document.querySelectorAll("li");
+    input.addEventListener("input", filter);
+    //console.log(lis);
+
+    function filter() { // 모든 li 숨기기 
+      //console.log("connected");
+      let inputValue = document.querySelector("#userInput").value;
+      console.log(inputValue);
+      for (let i = 0; i < lis.length; i++) {
+        lis[i].style.display = "none"
+      }
+      lis.forEach (function(item){
+        if (item.textContent.indexOf(inputValue) !== -1) {
+          item.style.display = "block"
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>

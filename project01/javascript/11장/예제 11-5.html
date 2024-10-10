@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>window 객체_clearTimeout()</title>
+</head>
+<body>
+  <p>wait 3seconds.</p>
+  <button onclick="myFunction()">Try it</button>
+  <button onclick="myStopFunction()">Stop</button>
+
+  <script>
+    let myVar
+    function myFunction(){
+      myVar = setTimeout(function(){alert("Hello");}, 3000)
+    }
+    function myStopFunction(){
+      clearTimeout(myVar);
+    }
+  </script>
+</body>
+</html>

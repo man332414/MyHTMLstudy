@@ -1,0 +1,404 @@
+*{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: raleway, sans-serif;
+}
+
+/* 헤더 시작 */
+header #background{
+  background-color: #07092f;
+  color: #ffffff;
+}
+
+.container{
+  width: 58%;
+  margin: 0 auto;
+}
+
+header .container ul{
+  display: flex;
+  justify-content: space-between;
+}
+
+header .container ul li{
+  padding: 20px 0;
+  cursor: pointer;
+  transition: all .3s;
+}
+
+header .container ul li i{
+  margin-right: 5px;
+  transition: all .6s;
+}
+
+header .container ul li:hover{
+  color: #fda417;
+}
+
+/* 헤더 끝 */
+/* 네비엔메인 시작 */
+
+#navNmain #backgroundImage{
+  width: 100%;
+  height: 665.5px;
+  background-image: url(./images/banner-bg.png);
+}
+
+#nav{
+  display: flex; 
+  padding: 30px 15px;
+}
+
+#logotainer{
+  margin-right: 610px;
+  align-content: center;
+}
+
+#menus{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menus ul{
+  display: flex;
+}
+#menus ul li{
+  padding: 8px 10px;
+  font-size: 18px;
+  color: #fcfefe;
+  font-weight: 400;
+  font-family: raleway, sans-serif;
+  transition: color .3s;
+  cursor: pointer;
+  align-content: center;
+  /* white-space: nowrap; */
+}
+#menus ul li#home{
+  color: #fda417;
+}
+
+#menus ul li:hover{
+  color: #fda417;
+}
+
+#login{
+  display: flex;
+  color: #ffffff;
+}
+
+#login h5:hover, #login i:hover{
+  color: #fda417;
+}
+
+#login h5,#login i{
+  transition: color .3s;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 30px;
+  align-content: center;
+}
+
+.clickable{
+  width: 170px;
+  height: 45px;
+  padding : 8px;
+  font-size: 16px;
+  color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  align-content: center;
+  background-color: #fda417;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color .4s;
+  margin: 0 10px;
+}
+
+.clickable:hover{
+  color: #07092f;
+  background-color: #fcfefe;
+}
+
+#main{
+  overflow: hidden;
+}
+
+#main ul{
+  white-space: nowrap;
+  font-size: 0;
+  transition: all .3s;
+}
+
+li#slideBox{
+  position: relative;
+  display:inline-block;
+  width: 100%;
+  height: 557px;
+  padding: 90px 0;
+  /* border: 1px solid; */
+}
+
+#mtextBox{
+  position: absolute;
+  width: 477.3px;
+  height: 376.92px;
+  color: #fcfefe;
+  top: 50%;
+  left: 33%;
+  white-space: wrap;
+  transform: translate(-50%, -50%);
+}
+
+#mtextBox h1 {
+  font-size: 60px;
+}
+
+#mtextBox p{
+  font-size: 16px;
+  margin: 20px 20px 70px 0;
+}
+
+#mtextBox:last-child div{
+  display: flex;
+}
+
+#black {
+  background-color: #07092f;
+  color: #fcfefe;
+}
+#black:hover{
+  background-color: #fda417;
+}
+
+button:hover{
+  background-color: #fda417;
+  color: #fff;
+}
+button:hover i{
+  color: #fcfefe;
+}
+button{
+  display: block;
+  border-radius: 50%;
+  width: 55px;
+  height: 55px;
+  align-content: center;
+  background-color: #FFFFFF;
+  border: 0;
+  transition: background-color .5s;
+  transition: color 1s;
+  cursor: pointer;
+}
+#main button{
+  position: absolute;
+  left: 1%;
+}
+
+#rightMain{
+  top:44%;
+}
+#leftMain{
+  top:56%;
+}
+
+#main{
+  position: relative;
+}
+
+button>i{
+  font-size: 40px;
+  color: #07092f;
+  transition: all 1s;
+}
+/* section #main end */
+/* project start */
+
+section#project{
+  padding: 90px 0;
+}
+
+#project .container h2{
+  font-size: 40px;
+  font-weight: 600;
+  padding-bottom: 30px;
+}
+
+#tabHandle{
+  display: flex;
+  width: 100%;
+  padding-bottom: 50px;
+}
+
+.active{
+  background-color: #fda417;
+  color: #fcfefe;
+}
+
+#tabContent{
+  font-size: 0;
+  display: flex;
+}
+
+#tabHandle li{
+  width: 145px;
+  height: 50px;
+  align-content: center;
+  padding: 12px 10px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.contentBox{
+  width: 380px;
+  height: 456px;
+  padding:0 15px;
+}
+
+.contentBox img{
+  width: 100%;
+  height: 310px;
+  /* border: 1px solid; */
+}
+
+.contentBox #textBox{
+  height: 146px;
+  padding: 20px;
+  background-color: #fda417;
+  border-radius: 0 0 20px 20px;
+  transition: background-color .3s;
+}
+
+.contentBox #textBox:hover{
+  background-color: #07092f;
+}
+
+.contentBox #textBox h5{
+  color: #fcfefe;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.contentBox #textBox p{
+  color: #fcfefe;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.relative{
+  position: relative;
+}
+
+.hoverGround{
+  position: absolute;
+  top: 0;
+  background-color: rgba(45, 45, 45, 0.5);
+  width: 100%;
+  height: 310px;
+  font-size: large;
+  text-align: center;
+  align-content: center;
+  /* transform: translateY(20%); */
+  opacity: 0;
+  transition: all .5s;
+}
+
+.hoverGround:hover{
+  /* transform:translateY(0%); */
+  opacity:1;
+}
+
+.hoverGround i{
+  background-color: #0fbdd7;
+  padding: 22px 20px 22px 20px;
+  border-radius: 50%;
+  align-content: center;
+  color: #fff;
+}
+
+/* section #projects end */
+
+/* section #testimonial start */
+
+#testimonial #backgroundColor{
+  background-color: #252525;
+  padding: 90px 0;
+}
+
+#testimonial .container h2{
+  font-size: 40px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+#testimonialSlideContent >div{
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 900;
+  padding-bottom: 10px;
+}
+
+#testimonialSlideContent{
+  width: 100%;
+  display: inline-block;
+}
+
+#testimonialSlideContent p{
+  background-color: white;
+  padding: 40px;
+  font-size: 15px;
+  margin-bottom: 50px;
+  white-space: wrap;
+  line-height: 170%;
+  border-radius: 3px;
+}
+
+#btnMajor{
+  display: flex;
+  justify-content: center;
+  padding-bottom: 90px;
+}
+
+#btnMajor button{
+  font-size: 30px;
+  margin: 0 10px;
+}
+
+#testimonialSlide{
+  white-space:nowrap;
+  font-size: 0;
+  transition: all .2s;
+}
+#testimonial .container>div{
+  width: 78%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* testimonial end */
+
+/* footer start */
+
+#background{
+  background-color: #1f1f1f;
+  color: #ffffff;
+}
+
+#icons{
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 90px;
+}
+
+.iconBox{
+  text-align: center;
+  font-size: 16px;
+}

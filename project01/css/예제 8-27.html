@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>애니메이션의 반복 횟수 설정하기</title>
+  <style>
+    div{
+      width: 100px;
+      height: 50px;
+      background:red;
+      position:relative;
+      animation:boxmove 5s;
+    }
+    #box1{
+      animation-delay:1s;
+      animation-direction : reverse;
+      animation-iteration-count:2;
+    }
+    #box2{
+      animation-delay:2s;
+      animation-direction:alternate-reverse;
+      animation-iteration-count:5;
+    }
+    @keyframes boxmove{
+    from{left:0px;}
+    to{left:300px;}
+    }
+  </style>
+</head>
+<body>
+  <div id="box1">애니메이션박스1</div>
+  <div id="box2">애니메이션박스2</div>
+</body>
+</html>

@@ -1,0 +1,685 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: montserrat, sans-serif;
+  font-size: 16px;
+}
+/* 문서 초기화 */
+
+.container{
+  width: 60%;
+  margin: 0 auto;
+}
+/* 컨테이너 클래스 설정 */
+
+.flex{
+  display: flex;
+  justify-content: space-between;
+}
+/* 자주 쓰는 속성은 클래스로 설정 */
+
+/* header start */
+
+nav{
+  padding: 15px 0;
+}
+/* 네비게이션과 메인 사이 공간 부여 */
+
+nav>img{
+  width: 250px;
+  height: 44px;
+}
+/* 로고 크기 부여 */
+
+.relative{
+  position:relative;
+}
+/* 자주 쓰는 속성은 클래스로 설정 */
+
+#nav_menu>li:hover{
+  color: #f74442;
+}
+/* 네비의 각 요소에 호버 시 색상 부여 */
+
+#nav_menu li{
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .4s;
+}
+/* 네비의 각 요소 스타일 설정 */
+
+#home{
+  color: #f74442;
+}
+/* 네비의 각 요소 스타일 설정 */
+
+#nav_menu{
+  width: 55%;
+  align-items: center;
+}
+/* 네비 메뉴 사이즈 및 정렬 설정 */
+
+#pages:hover #sub_menu{
+  display:block;
+}
+/* 플로팅 메뉴 안보이게 처리
+Q: 원본 사이트 처럼 클릭 시에 보이고 다른 곳 클릭할 때까지 안보이는 설정 방법을 모르겠습니다. */
+
+#sub_menu{
+  border: 2px solid;
+  position: absolute;
+  top: 8%;
+  line-height: 200%;
+  padding: 10px 60px 10px 10px;
+  box-shadow: 2px 2px;
+  display: none;
+}
+/* 플로팅 메뉴 스타일 설정 */
+
+/* herader end */
+/* section #main start */
+
+#main_back_img{
+  height: 590px;
+  background-image: url(./famms-1.0.0/images/slider-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* 좌우 크기 맞춰서 원본 사진 일부만 표시 */
+}
+/* 배경사진 사이즈 설정 */
+
+#main_back_img>div:first-child{
+  height: 100%;
+  align-content: center;
+}
+/* 메인 텍스트 세로중앙정렬 */
+
+#main_back_img input[type=radio]{display:none;}
+/* 메인 텍스트 슬라이드 라디오 안보이게 처리 */
+
+#main_texts{
+  position: relative;
+  left: -33%;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 160%;
+}
+/* 메인 텍스트 전체 가로 정렬 */
+
+#main_text{
+  position: relative;
+  left: 16%;
+  display: inline-block;
+  white-space: normal;
+  /* p 태그 줄바꿈 설정 */
+  transition: all .7s;
+}
+/* 메인 텍스트 각각 가로 정렬 */
+
+#main_text>h1:first-child{
+  color: #f74442;
+}
+/* 메인 h1 태그 스타일 적용 */
+
+#main_text h1{
+  font-family: "playfair display" ,serif;
+  font-size: 72px;
+  font-weight: 200;
+}
+/* 메인 h1 태그 스타일 적용 */
+
+#main_text p{
+  width: 30%;
+  margin-top: 15px;
+  color: #0c0c0c;
+  line-height: 160%;
+}
+/* 메인 텍스트 스타일 적용 */
+
+#main_text a{
+  background-color: #f74442;
+  color: #fff;
+  display: block;
+  width: 10%;
+  padding: 15px 30px;
+  text-align: center;
+  margin: 30px 0 50px 0;
+  font-weight: 600;
+}
+/* shop now 스타일 적용 */
+
+.fa-circle{
+  color: #fff;
+  font-size: 14px;
+  margin: 0 2px;
+}
+/* 이동하는 핸들 점으로 만들기 */
+
+#ms_a:checked~#main_slider_labels #ms_a_dot{
+  color: #f74442;
+  scale: 1.5;
+}
+#ms_b:checked~#main_slider_labels #ms_b_dot{
+  color: #f74442;
+  scale: 1.5;
+}
+#ms_c:checked~#main_slider_labels #ms_c_dot{
+  color: #f74442;
+  scale: 1.5;
+}
+/* 클릭 시 커져서 클릭여부 확인 */
+#ms_a:checked~#main_texts #main_text{transform: translateX(0%);}
+#ms_b:checked~#main_texts #main_text{transform: translateX(-100%);}
+#ms_c:checked~#main_texts #main_text{transform: translateX(-200%);}
+/* 슬라이드 기능 부여 */
+
+/* section #main end */
+/* section #service start */
+
+#service_title{
+  margin-top: 50px;
+  text-align: center;
+}
+/* 서비스 섹션 제목 스타일 부여 */
+
+#service_title hr{
+  margin: 0 auto;
+  width: 70px;
+  height: 4px;
+  border: 0px;
+  background-color: #f74442;
+}
+/* 서비스 섹션 제목 밑줄 스타일 부여 */
+
+#service_title h1{
+  font-family: "playfair display", serif ;
+  font-size: 56px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+/* 서비스 섹션 제목 스타일 부여 */
+
+#service_boxes ul{
+  align-content: center;
+  background-color: #002C3E;
+  border-radius: 5px;
+  width: 360px;
+  height: 260px;
+  padding: 45px 50px;
+  text-align: center;
+  color: #fff;
+  margin-top: 50px;
+}
+/* 서비스 박스 스타일 부여 */
+
+#service_boxes ul i{
+  font-size: 30px;
+  margin-bottom: 15px;
+}
+/* 서비스 박스 정렬 */
+
+#service_boxes ul h2{
+  margin-bottom: 8px;
+  font-size: 21px;
+}
+/* 서비스 박스 정렬 */
+
+#service_boxes ul p{
+  margin-bottom: 16px;
+}
+/* 서비스 박스 정렬 */
+
+/* section #service end */
+/* section #new_arrivals start */
+
+#new_arrivals_back_img{
+  display: block;
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position-x: 38%;
+  background-size: contain;
+  background-image: url(./famms-1.0.0/images/arrival-bg.jpg);
+  background-color: #D4CED0;
+}
+/* 사진 가로 크기가 충분하지 않아 반복 없이 위치 정렬 후 배경 색 적용 */
+/* 중간 배경 설정 */
+
+#new_arrivals>div>div{
+  height: 50%;
+  margin-top: 50px;
+  align-content: center;
+}
+/* 위 섹션과 거리 나누기 */
+
+#new_arrivals_box{
+  position: absolute;
+  width: 44%;
+  right: 5%;
+}
+/* 글자상자 스타일 설정 */
+#new_arrivals_box h1{
+  font-family: "playfair display", serif ;
+  font-weight: 500;
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+/* 글자상자 스타일 설정 */
+#new_arrivals_box p{
+  margin-bottom: 16px;
+  line-height: 160%;
+}
+/* 글자상자 스타일 설정 */
+
+#new_arrivals_box a{
+  background-color: #f74442;
+  color: #fff;
+  display: block;
+  width: 35%;
+  padding: 15px 30px;
+  text-align: center;
+  margin: 30px 0 50px 0;
+  font-weight: 400;
+}
+/* 링크 상자 스타일 적용 */
+
+/* section #new_arrivals end */
+/* section #products start */
+
+#products_title{ 
+  text-align: center;
+}
+/* 섹션 제목 스타일 적용 */
+
+#products_title hr{
+  margin: 0 auto;
+  margin-bottom: 100px;
+  width: 70px;
+  height: 4px;
+  border: 0px;
+  background-color: #f74442;
+}
+/* 섹션 제목 밑줄 스타일 적용 */
+
+#products_title span{
+  color: #f74442;
+}
+/* 섹션 제목 스타일 적용 */
+
+#products_title h1, #products_title span{
+  font-family: "playfair display", serif ;
+  font-weight: 500;
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+/* 섹션 제목 스타일 적용 */
+
+#products_list{
+  flex-wrap: wrap;
+}
+/* 넘치는 자식요소 줄바꿈 */
+
+#products_box{
+  overflow: hidden;
+  /* 밑에서 올라오는 팝업 상자 가리기 위함 */
+  width: 360px;
+  height: 325px;
+  padding: 35px;
+  margin: 20px 0;
+  align-content: center;
+  background-color: #f7f8f9;
+  border: 10px solid #fff;
+  box-shadow: 2px 2px 5px #D4CED04f;
+}
+/* 상품 박스 설정 */
+
+#products_box_img{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#products_box img{
+  width: 125px;
+}
+/* 상품박스 이미지 설정 */
+
+.pop-up{
+  width: 340px;
+  height: 325px;
+  position: absolute;
+  transform: translate(-50%, 50%);
+  top: 50%;
+  left: 50%;
+  background-color: #f7f8f97f;
+  align-content: center;
+  transition: all .2s;
+}
+/* 팝업 상자 설정 */
+
+.pop-up_button_r{
+  text-align: center;
+  margin: 0 auto;
+  color: #fff;
+  width: 50%;
+  background-color: #f74442;
+  padding: 10px 30px;
+  font-weight: 400;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  border: 1px solid;
+  transition: all .2s;
+  cursor: pointer;
+}
+/* 팝업 상자 빨간 상자 설정 */
+.pop-up_button_b{
+  text-align: center;
+  border: 1px solid;
+  margin: 0 auto;
+  width: 50%;
+  color: #fff;
+  background-color: #000;
+  padding: 10px 30px;
+  font-weight: 400;
+  border-radius: 20px;
+  transition: all .2s;
+  cursor: pointer;
+}
+/* 상품상자 검은 상자 설정 */
+
+#products_box:hover .pop-up{
+  display: block;
+  transform: translate(-50%, -50%);
+}
+.pop-up_button_r:hover{
+  background-color: #ffffff00;
+  color: #f74442;
+  border: 1px solid;
+}
+.pop-up_button_b:hover{
+  background-color: #ffffff00;
+  color: #000;
+  border: 1px solid;
+}
+/* 팝업 상자 떠오르게 설정 및 각 버튼설정 */
+
+#products_list_button{
+  margin: 0 auto;
+}
+/* 상품 버튼 중앙 정렬 */
+#products_list_button a{
+  background-color: #f74442;
+  color: #fff;
+  display: block;
+  width: 100%;
+  padding: 15px 30px;
+  text-align: center;
+  margin: 30px 0 50px 0;
+  font-weight: 400;
+  transition: all .2s;
+  border: 1px solid;
+}
+/* 상품 버튼 스타일 부여 */
+
+#products_list_button a:hover{
+  background-color: #ffffff00;
+  color: #f74442;
+  border: 1px solid;
+}
+/* 상품 버튼 스타일 부여 */
+
+/* section #products end */
+/* section #subscribe_us */
+
+#subscribe_us_back_img{
+  background-color: #D4CED0;
+}
+/* 배경색 적용 */
+#subscribe_us_text{
+  text-align: center;
+  padding-top: 70px;
+  margin-bottom: 40px;
+}
+/* 텍스트 정렬 */
+
+#subscribe_us_text h1{
+  font-family: "playfair display", serif ;
+  font-weight: 500;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+/* 텍스트 스타일 적용 */
+
+#subscribe_us_form{
+  width: 842px;
+  text-align: center;
+  margin: 0 auto;
+}
+#subscribe_us_form input[type=email]{
+  border: 0;
+  padding: 20px;
+  border-radius: 50px;
+  height: 50px;
+  width: 100%;
+  margin-bottom: 40px;
+}
+#subscribe_us_form input[type=submit]{
+  border: 1px solid #f74442;
+  color: #fff;
+  background-color: #f74442;
+  font-weight: 500;
+  border-radius: 50px;
+  vertical-align: middle;
+  height: 44px;
+  width: 40%;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+/* 구독 이메일 상자 스타일 적용 */
+
+#subscribe_us_form input[type=submit]:hover{
+  background-color: #ffffff00;
+  color: #f74442;
+  border: 1px solid;
+}
+/* section #subscribe_us end */
+/* section #customer */
+
+#customer_title{
+  text-align: center;
+  margin-bottom: 60px;
+}
+/* 소비자 섹션 타이틀 위치 */
+#customer_title h1{
+  font-family: "playfair display", serif ;
+  font-weight: 500;
+  font-size: 56px;
+  margin-bottom: 16px;
+}
+/* 소비자 섹션 h1 스타일 */
+
+#customer_title hr{
+  margin: 0 auto;
+  width: 70px;
+  height: 4px;
+  border: 0px;
+  background-color: #f74442;
+}
+/* 소비자 섹션 제목 밑줄 설정 */
+
+#cs_box_img img{
+  width: 150px;
+  border-radius: 50%;
+}
+/* 소비자 이미지 사이즈 설정 */
+
+#customer_slide_boxes{
+  white-space: nowrap;
+  overflow: hidden;
+}
+/* 소비자 박스 횡으로 펼치기 */
+
+#customer_slide_box{
+  display: inline-block;
+  text-align: center;
+  transition: all .3s;
+}
+/* 소비자 박스 횡으로 펼치기 */
+
+#customer_slide_text{
+  margin: 0 auto;
+  width: 80%;
+}
+/* 소비자 박스 글자 정렬 및 스타일 */
+
+#customer_slide_text h3{
+  font-size: 20px;
+  margin-bottom: 10px;
+  /* 소비자 박스 글자 정렬 및 스타일 */
+}
+
+#customer_slide_text h4{
+  font-size: 15px;
+  margin-bottom: 10px;
+  font-weight: 300;
+}
+/* 소비자 박스 글자 정렬 및 스타일 */
+
+#customer_slide_text p{
+  line-height: 160%;
+  white-space: wrap;
+}
+/* 소비자 박스 글자 정렬 및 스타일 */
+
+#customer_slide input[type=radio]{
+  display: none;
+}
+/* 슬라이드 기능설정 */
+
+#customer_slide_label label{
+  color: #fff;
+  background-color: #f74442;
+  font-size: 20px;
+  padding: 10px 15px ;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* 슬라이드 핸들 스타일 설정 */
+
+#customer_slide_label label:hover{
+  background-color: #000;
+}
+/* 슬라이드 핸들 설정 */
+
+.cs_left{
+  position: absolute;  
+  top: 25%;
+  left: 25%;
+  /* 슬라이드 핸들 설정 */
+}
+.cs_right{
+  position: absolute;  
+  top: 25%;
+  right: 25%;
+}
+/* 슬라이드 핸들 설정 */
+
+#customer_slide_label div label{
+  display: none;
+}
+/* 불필요 핸들 숨김처리 */
+
+#cs_a:checked~#customer_slide_boxes #customer_slide_box{
+  transform: translateX(0%);
+}
+#cs_b:checked~#customer_slide_boxes #customer_slide_box{
+  transform: translateX(-100%);
+}
+#cs_a:checked~#customer_slide_label .control01 label{display: block;}
+#cs_b:checked~#customer_slide_label .control02 label{display: block;}
+
+/* section #customer end */
+/* footer */
+
+#footer_top_back_color{
+  background-color: #f7f8f9;
+}
+/* 푸터 탑 배경색 설정 */
+
+#footer_top{
+  padding: 60px 0 70px 0;
+}
+/* 푸터 탑 배경 설정 */
+
+#footer_top ul li h2{
+  margin-bottom: 40px;
+}
+/* li 제목들과 나머지 요소들 줄간격 설정 */
+
+#footer_top ul li{
+  line-height: 160%;
+}
+/* li 각 요소들 줄간격 설정 */
+
+#site_inform{
+  width: 33%;
+}
+/* 사이트 인폼 크기 설정 */
+
+#site_inform li{
+  margin: 15px;
+}
+/* 사이트 인폼 줄간격 설정 */
+
+#site_inform li img{
+  width: 210px;
+  margin-bottom: 10px;
+}
+/* 로고 스타일 적용 */
+
+#site_inform li span{
+  font-size: 15px;
+  font-weight: 700;
+}
+/* 굵은 글자 스타일 적용 */
+
+#newsletter{
+  width: 30%;
+}
+
+#newsletter li{
+  margin-bottom: 20px;
+}
+/* 줄간격 설정 */
+
+#newsletter li input[type=email]{
+  width: 295px;
+  height: 48px;
+  padding: 10px 110px 10px 15px;
+}
+/* 줄간격 설정 */
+
+#newsletter li input[type=submit]{
+  background-color: #f74442;
+  border: 1px solid #f74442;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  right: 0;
+  height: 48px;
+  padding: 0 15px;
+}
+/* 이메일 구독버틀 꾸미기 */
+
+#footer_bottom_color{
+  text-align: center;
+  background-color: #222222;
+  color: #f7f8f9;
+  padding: 20px 0;
+}
+#footer_bottom_color a{
+  color: #f74442;
+}
+/* 이메일 구독버틀 꾸미기 */

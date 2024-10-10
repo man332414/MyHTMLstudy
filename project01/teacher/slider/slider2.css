@@ -1,0 +1,60 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  list-style: none;
+  text-decoration:none;
+}
+
+label{
+  background-color: aqua;
+}
+
+#slider{
+  width: 50%;
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+#slider_box{
+  font-size: 0px;
+}
+
+li{
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  transition: all 2s;
+}
+
+li .slide{
+  width: 100%;
+}
+
+li label{
+  position: absolute;
+  top:50%;
+  transform:translateY(-50%);
+  width: 5%;
+}
+
+li label.left{
+  left:0;
+}
+
+li label.right{
+  right:0;
+}
+
+li label img{
+  width: 100%;
+}
+
+#a:checked ~ #slider li{transform: translateX(0%);}
+#b:checked ~ #slider li{transform: translateX(-100%);}
+#c:checked ~ #slider li{transform: translateX(-200%);}
+#d:checked ~ #slider li{transform: translateX(-300%);}

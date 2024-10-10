@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>event2</title>
+</head>
+<body>
+  <button id="myBtn">Try it</button>
+  <p id="demo"></p>
+  <script>
+    document.querySelector("#myBtn").onclick = displayDate;
+    function displayDate(){ 
+      document.querySelector("#demo").innerHTML = Date();
+    }
+  </script>
+</body>
+</html>

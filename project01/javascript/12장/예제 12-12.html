@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>creatElement()_2</title>
+</head>
+<body>
+  <p>creat new button element with text, and append it to div</p>
+  <div id="myDiv">
+    first statement.
+  </div>
+  <button onclick="myFunction()">Try it</button>
+  <script>
+    function myFunction(){
+      let para = document.createElement("p");
+      let t = document.createTextNode("add statements");
+      
+      para.appendChild(t);
+      document.querySelector("#myDiv").appendChild(para);
+    }
+  </script>
+</body>
+</html>

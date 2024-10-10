@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>replaceChild()</title>
+</head>
+<body>
+  <ul id="myList">
+    <li>Coffee</li>
+    <li>Tea</li>
+    <li>Milk</li>
+  </ul>
+  <p>Replace an item</p>
+  <button onclick="replaceFunction()">Try it</button>
+  <script>
+    function replaceFunction(){ 
+      let textnode = document.createTextNode("Water");
+      let item = document.querySelector("#myList").childNodes[1];
+      item.replaceChild(textnode, item.childNodes[0]);
+    }
+  </script>
+</body>
+</html>

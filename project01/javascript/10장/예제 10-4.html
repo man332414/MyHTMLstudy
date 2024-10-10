@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>new 객체 정의2</title>
+  <script>
+    function Car(model, speed, color){
+      this.model = model;
+      this.speed = speed;
+      this.color = color;
+      this.break = function(){
+        this.speed -= 10;
+      };
+      this.accel=function(){
+        this.speed += 10;
+      };
+    }
+
+    myCar = new Car("BMW", 100, "black");
+    yourCar = new Car("Benz", 150, "gray");
+    document.write("myCar.Model : " + myCar.model + " 속도 : " + myCar.speed + " 색상 : " +myCar.color +'<br>');
+    yourCar.accel();
+    document.write("yourCar.Model : " + yourCar.model + " 속도 : " + yourCar.speed + " 색상 : " +yourCar.color +'<br>');
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>8.19. 예제 4 (미로)</title>
+  <script>
+    let direction=prompt("미로에 들어섰습니다. 당신은 왼쪽 오른쪽으로 갈 수 있습니다.","left / right")
+    if(direction=="left"){
+      document.write("왼쪽으로 들어섰습니다." + "<br>");
+      let dice = Math.random();
+      if(dice >= 0.5){
+        document.write("아름다운 폭포를 발견했다, 체력이 회복됩니다.");
+      }else {
+        document.write("고블린을 만나 전투를 시작합니다.");
+      }
+    } 
+    else if(direction=="right"){
+      document.write("오른쪽으로 들어섰습니다." + "<br>");
+      let dice = Math.random();
+      if(dice >= 0.5){
+        document.write("어둠속에서 괴물을 만났습니다. 도망칩니다.");
+      }else {
+        document.write("신비로운 마법사를 만났다. 아이템을 받았다.");
+      }
+    } 
+    else{
+      document.write("하기 싫으면 시간버리지 말고 하지마.");
+    }
+    document.write("<br>"+"미로를 탈출했습니다.")
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

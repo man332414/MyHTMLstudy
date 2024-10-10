@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>removeChild()</title>
+</head>
+<body>
+  <ul id="myList">
+    <li>Coffee</li>
+    <li id="myTea">Tea</li>
+    <li>Milk</li>
+  </ul>
+  <p>Remove the first item form the list</p>
+  <button onclick="myFunction()">Try it</button>
+  <script>
+    function myFunction(){
+      let list = document.querySelector("#myList");
+      //let x = list.removeChild(list.childNodes[0]);
+      let item = document.querySelector("#myTea"); item.parentNode.removeChild(item);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+#tab_box{
+  border:1px solid crimson
+}
+
+#tab_name{
+  width: 400px;
+  height: 100px;
+  border: 1px solid blue;
+}
+
+label{
+  background-color: aqua;
+  border: 1px dashed blueviolet;
+}
+
+#t_a:checked ~ #tab_contant{}
+#t_b:checked ~ #tab_contant{}
+#t_c:checked ~ #tab_contant{}
+#t_d:checked ~ #tab_contant{}

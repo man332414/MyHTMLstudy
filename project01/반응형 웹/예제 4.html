@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>typing</title>
+</head>
+<body>
+  <div id="text"></div>
+  <script>
+    let txt = "안녕하세요!! 타이핑 중 입니다. ";
+    let textDiv = document.querySelector("#text");
+    console.log(textDiv);
+    let index = 0;
+
+    function typing(){
+      if(index<txt.length){
+        textDiv.innerHTML += txt.charAt(index);
+        index++;
+        setTimeout(typing,1);
+        console.log(index);
+      } else {
+        index=0;
+        //textDiv.innerHTML = "";
+        typing();
+      }
+    }
+    //document.addEventListener("DOMContentLoaded" typing;
+    window.addEventListener("load", typing);
+  </script>
+</body>
+</html>

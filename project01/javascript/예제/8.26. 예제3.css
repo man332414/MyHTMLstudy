@@ -1,0 +1,300 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+/* 컨테이너 설정 */
+.container{
+  width: 62%; /* 좌우 여백 부여 */
+  margin: 0 auto; /* 중앙정렬 */
+}
+
+/* nav top start */
+#background{
+  color: #ffffff;
+  background-color: #111111;
+  /* border:1px solid */
+}
+
+#navTop{
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 20px;
+  font-size: 15px;
+  align-items: center;
+}
+
+#navTop>ul{
+  display: flex;
+  position: relative;
+  cursor: pointer;
+  font-size: 13px;
+  padding: 13px;
+}
+
+#navTop>ul>li{
+  padding-right: 20px
+}
+
+#money{
+  position: absolute;
+  top: 100%;
+  background-color: #ffffff;
+  color: black;
+  line-height: 200%;
+  padding: 5px 12px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  /* display: none; */
+  opacity: 0;
+  transition: all .4s;
+  visibility: hidden;
+}
+/* js 도와줘 */
+/* #pMoney:hover #money{
+  transform: translateY(-15%);
+  opacity: 1;
+  visibility: visible;
+} */
+/* nav top end */
+
+/* nav logoNmenus start */
+
+#logoNmenusBox{
+  display:flex;
+  justify-content:space-between;
+  /* border:1px solid; */
+}
+
+.logo{
+  align-content: center;
+}
+
+#menusBox{
+  width: 100%;
+}
+#menus{
+  display: flex;
+  justify-content: space-between;
+  width: 55%;
+  margin: 0 auto;
+  /* border: 1px solid; */
+}
+
+#menus>li{
+  padding: 25px 0;
+  cursor: pointer;
+}
+
+
+#menus>li:hover hr{
+  scale: 1;
+}
+
+hr{
+  border: 0;
+  height: 2px;
+  background-color: #e53637;
+  scale: 0;
+  transition: all .2s;
+}
+
+#home:first-child>hr{
+  border: 0;
+  height: 2px;
+  background-color: #e53637;
+  scale: 1;
+}
+
+#pSubMenu{
+  position: relative;
+}
+
+#subMenu{
+  position: absolute;
+  color: #fff;
+  background-color: #111111;
+  white-space: nowrap;
+  padding: 10px 20px;
+  font-size: 14px;
+  line-height: 200%;
+  top: 100%;
+  opacity: 0;
+  cursor: pointer;
+  transition: all .4s;
+  visibility: hidden;
+  z-index: 100;
+}
+
+/* js 도와줘 */
+/* #pSubMenu:hover #subMenu{
+  transform: translateY(-15%);
+  opacity: 1;
+  visibility: visible;
+} */
+
+#icons{
+  /* border:1px solid; */
+  white-space: nowrap;
+  align-content: center;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+#icons i{
+  padding-left: 20px;
+}
+/* nav logoNmenus end */
+
+#mainBox{
+  position: relative;
+}
+
+#textBox{
+  position:absolute;
+  top: 25%;
+  left: 21%;
+  /* border : 1px solid; */
+  width: 23%;
+  padding: 0 15px;
+  white-space: wrap;
+}
+
+#textBox h6{
+  color: #e53637;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+#textBox h2{
+  color: #111111;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+#textBox #sns {
+  margin-top: 190px;
+}
+
+#textBox #sns i{
+  margin-right: 32px;
+  font-size: 14px;
+  color: #111111;
+}
+
+#textBox p{
+  font-size: 16px;
+}
+
+#shopNowBtn{
+  margin-top: 30px;
+  color:#fff;
+  background-color: black;
+  width: 200px;
+  height: 55px;
+  text-align: center;
+  align-content: center;
+  letter-spacing: 5px;
+  padding: 14px 30px;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+#mainBoxes{
+  width: 100%;
+  font-size: 0;
+  white-space: nowrap;
+  transition: all .5s;
+}
+
+#mainBox{
+  display: inline-block;
+}
+
+#mainBox img{
+  width: 100%;
+  height: 800px;
+}
+
+#main{
+  position:relative;
+  overflow: hidden;
+}
+
+#main button{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent;
+  border: 0;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#left{
+  left: 5%;
+}
+
+#right{
+  right:5%;
+}
+
+/* 탭 스타일 부여 */
+#tabs{
+  display: flex; /* 쌓인 블록요소 횡으로 펼치기 */
+  width: 53%; /* 너비 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+  margin-top: 50px; /* 탭 상단 공백 설정 */
+  margin-bottom: 50px; /* 탭 하단 공백 설정 */
+  justify-content: space-between;  /* 요소별 배분정렬 */
+  cursor:pointer; /* 커서 올릴 시 클릭 가능한요소로 표시 */
+  color: lightgrey; /* 눌리기 전 색상 설정 */
+  /* border: 1px solid; */
+}
+
+.active{ /* 클릭 되었을 때 탭 스타일*/
+  color: black;
+}
+
+#items{ /* 아이템들 블록요소 횡으로 펼치기  */
+  display: flex;
+  flex-wrap: wrap; /* 펼친 이후 부모요소를 넘어가는 자식들은 줄바꿈 */
+}
+
+.productBox{ /* 상품 박스들 크기지정 */
+  width: 292.5px;
+  height: 400px;
+  padding: 0 15px;
+  position:relative; /* 플로팅 글자를 띄우기 위함 */
+  transition: all .5s;
+}
+
+.imgBox img{ /* 이미지 박스 크기 조정 */
+  width: 100%;
+  height: 260px;
+}
+
+.new{ /* 플로팅 글자 중 new 스타일 설정 */
+  position: absolute;/* 플로팅 글자 띄우기 */
+  background-color: white;
+  top: 5%;
+  padding: 3px 20px;
+}
+
+.sale{ /* 플로팅 글자 중 sale 스타일 설정 */
+  position: absolute; /* 플로팅 글자 띄우기 */
+  background-color: black;
+  color:white;
+  top: 5%;
+  padding: 3px 20px;
+}
+
+.starPoint i{ /* 별점 크기 조절 */
+  font-size: small;
+}
+.starPoint .fa-solid{ /* 노랑별 만들기 */
+  color: gold;
+}

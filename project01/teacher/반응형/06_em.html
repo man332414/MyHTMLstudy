@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+/* em / rem 비교 */
+*{font-size: 20px;} 
+/* 전체선택자 : 모든 요소에는 html요소도 포함 */
+.box01 {font-size: 10px;}
+.box01 h1{font-size : 3em;} /*30px*/
+.box01 p{font-size : 2em;} /*20px*/
+
+.box02 {font-size: 10px;}
+.box02 h1{font-size: 3rem;} /*60px*/
+.box02 p{font-size: 2rem;} /*40px*/
+
+  </style>
+</head>
+
+<body>
+  <div class="box01">
+    <h1>제목입니다</h1>
+    <p>문단입니다</p>
+  </div>
+  <div class="box02">
+    <h1>제목입니다</h1>
+    <p>문단입니다</p>
+  </div>
+</body>
+
+</html>

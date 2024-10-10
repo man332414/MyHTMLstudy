@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동차 정보</title>
+</head>
+<body>
+    <h1>자동차 정보</h1>
+    <div id="carInfo"></div>
+    <img id="carImage" src="./car-move.png" alt="Car Image" style="display: none; width: 300px;">
+    
+    <button id="accelerateBtn">가속</button>
+    <button id="brakeBtn">감속</button>
+    
+    <script>
+        var myCar = {
+            type: "hyundai YF-sonata",
+            color: "gray",
+            speed: 100,
+            break: function() {
+                this.speed -= 10;
+                if (this.speed < 0) this.speed = 0; // 속도는 0 이하가 되지 않도록
+                this.updateInfo();
+            },
+            accel: function() {
+                this.speed += 10;
+                this.updateInfo();
+            },
+            updateInfo: function() {
+                document.getElementById("carInfo").innerHTML = 
+                    "myCar : " + this.type + " 색상 : " + this.color + " 속력 : " + this.speed;
+            }
+        };
+
+        // 차 정보 초기 표시
+        myCar.updateInfo();
+
+        // 이미지 경로 설정
+        var imagePath = "car-stop.png"; // 여기에 실제 이미지 파일명 사용
+        document.getElementById("carImage").src = imagePath;
+        document.getElementById("carImage").style.display = "block"; // 이미지 표시
+
+        // 버튼 클릭 이벤트 리스너 추가
+        document.getElementById("accelerateBtn").addEventListener("click", function() {
+            myCar.accel();
+        });
+
+        document.getElementById("brakeBtn").addEventListener("click", function() {
+            myCar.break();
+        });
+    </script>
+</body>
+</html>

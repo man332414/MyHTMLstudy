@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>8.20. 예제 1 (영웅과 몬스터)</title>
+  <script>
+    function Hero(name, health) {
+      this.name = name;
+      this.health = health;
+      this.intro = function () {
+        console.log(`안녕하세요, 저는 ${name}입니다. 현재 체력은 ${health} 입니다.`);
+      };
+      this.attack = function () {
+        return 1 + Math.floor(Math.random() * 19);
+      }
+    }
+
+    function Monster(name, health) {
+      this.name = name;
+      this.health = health;
+      this.attack = function () {
+        return 1 + Math.floor(Math.random() * 14);
+      }
+    }
+
+    function battle(obj1, obj2) {
+      while (obj1.health > 0 && obj2.health > 0) {
+        let obj1Attack = obj1.attack();
+        let obj2Attack = obj2.attack();
+        obj2.health -= obj1Attack;
+        console.log(`${obj1.name}의 공격! ${obj2.name}에게 ${obj1Attack}의 피해를 입혔습니다. (${obj2.health} 남음)`)
+        if (obj2.health > 0) {
+          obj1.health -= obj2Attack;
+          console.log(`${obj2.name}의 반격! ${obj1.name}에게 ${obj2Attack}의 피해를 입혔습니다. (${obj1.health} 남음)`)
+        }
+        if (obj1.health <= 0) {
+          console.log(`${obj1.name}이(가) 죽었습니다.`);
+          console.log(`${obj2.name}이(가) ${obj1.name}을(를) 처치했습니다.`);
+          console.log(`${obj2.name}의 체력은 ${obj2.health}남았습니다.`);
+          break;
+        } else if (obj2.health <= 0) {
+          console.log(`${obj2.name}이(가) 죽었습니다.`);
+          console.log(`${obj1.name}이(가) ${obj2.name}을(를) 처치했습니다.`);
+          console.log(`${obj1.name}의 체력은 ${obj1.health}남았습니다.`);
+          break;
+        }
+      }
+    }
+    
+    let hong = new Hero("홍길동", 100);
+    hong.intro();
+    console.log(hong);
+
+    let goblin = new Monster("고블린", 30);
+    let ogre = new Monster("오우거", 50);
+    let dragon = new Monster("드래곤", 100);
+
+    /*dragon.dropItem=function(){
+      let dice = Math.floor(Math.random()*6);
+      let item
+      if(dragon.health <= 0){
+        switch(dice){
+          case(1):
+          item = "trash";
+          case(2):
+          item = "trash";
+          case(3):
+          item = "trash";
+          case(4):
+          item = "trash";
+          case(5):
+          item = "trash";
+          case(6):
+          item = "treasure";
+        }
+        console.log(`${dragon.name}이(가) ${item}을 떨어뜨렸습니다.`)
+        console.log(dice);
+      }
+    }*/
+          
+    let monsters = [goblin, ogre, dragon];
+          
+    for(i=0; i<monsters.length; i++){
+      battle(hong, monsters[i]);
+      dragon.dropItem();
+    }
+
+    if(hong.health > 0){
+      console.log(`${hong.name}이(가) 모험을 완료했습니다.`);
+    } else {
+      console.log(`${hong.name}이(가) 모험을 실패했습니다.`);
+    }
+  </script>
+</head>
+
+<body>
+</body>
+
+</html>

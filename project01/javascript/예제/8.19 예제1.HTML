@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>8.19. 예제 1(두부사오기)</title>
+  <script>
+    let myMoney = 500;
+    let tofuPrice = 300;
+    let tofuCount = prompt("두부 갯수를 입력하세요", "");
+    let Change = myMoney - (tofuPrice * tofuCount);
+    if (Change >= 0) {
+      document.write("오늘길에 두부 " + tofuCount + "개 사왔어요!" + " 제 수중에는 " + Change + "원 남았어요");
+    } else {
+      document.write("돈이 " + Number(Change * (-10 / 10)
+      ) + "원 부족해서 못사왔어요");
+    }
+  </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

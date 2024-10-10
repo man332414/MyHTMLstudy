@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>getElementsByTagName</title>
+</head>
+<body>
+  <p>Hello World!</p>
+  <p>The DOM is very useful</p>
+  <p>This example demonstrates th <b>getElementsByTagName</b> method</p>
+  <p id="demo"></p>
+
+  <script>
+    let x = document.getElementsByTagName("p");
+    document.getElementById("demo").innerHTML = 'The frist paragraph(index 0) : ' +x[4].innerHTML;
+  </script>
+</body>
+</html>

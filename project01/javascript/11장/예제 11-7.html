@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>location 객체</title>
+</head>
+<body>
+  <button onclick="newDoc()">assign</button>
+  <script>
+    document.write("<br>"+"Page location : " + location.href +"<br>");
+    document.write("Page hostname : " + location.hostname +"<br>");
+    document.write("Page path : " + location.pathname +"<br>");
+    document.write("Page protocol : " + location.protocol +"<br>");
+
+    function newDoc(){
+      location.assign("https://blog.naver.com/pd20041/")
+    }
+  </script>
+</body>
+</html>

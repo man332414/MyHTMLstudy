@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>images collection</title>
+</head>
+<body>
+  <img src="../예제/car-move.png" alt="" width="100" height="100">
+  <img src="../예제/car-stop.png" alt="" width="100" height="100">
+  <img src="/project01/copy site/famms-1.0.0/images/logo.png" alt="" width="540" height="100" id="myImg">
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo01"></p>
+  <p id="demo02"></p>
+  <p id="demo03"></p>
+  <script>
+    function myFunction(){ 
+      let x = document.images.length;
+      document.querySelector("#demo01").innerHTML = "images.length : " +x;
+      let y = document.images[0].src;
+      document.querySelector("#demo02").innerHTML = y;
+      let z = document.images.namedItem("myImg").src;
+      document.querySelector("#demo02").innerHTML = z;
+    }
+  </script>
+</body>
+</html>

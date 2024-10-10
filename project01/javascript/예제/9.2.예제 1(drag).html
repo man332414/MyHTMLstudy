@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding:0;
+      text-decoration: none;
+      list-style: none;
+      box-sizing: border-box;
+    }
+
+    #dragables{
+      display: flex;
+      margin: 30px 10px;
+    }
+    
+    .dragable{
+      background-color: royalblue;
+      margin: 0 10px;
+      color: sandybrown;
+      border-radius: 10px;
+      width: 200px;
+      height: 50px;
+      text-align: center;
+      align-content: center;
+      cursor: grab;
+    }
+
+    .dragable:active{
+      cursor: grabbing;
+    }
+
+    #dropBox{
+      border: 2px dashed chartreuse;
+      width: 50%;
+      height: 300px;
+      margin-bottom: 100px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+  <div id="dragables">
+    <div class="dragable" draggable="true">드래그 컨텐츠1</div>
+    <div class="dragable" draggable="true">드래그 컨텐츠2</div>
+    <div class="dragable" draggable="true">드래그 컨텐츠3</div>
+    <div class="dragable" draggable="true">드래그 컨텐츠4</div>
+  </div>
+  <div id="dropBox">여기에 드랍 하세요</div>
+  <script>
+    // 드래그 컨텐츠를 드래그해서 드랍박스에 드랍하기
+    // 드래그 컨텐츠가 드랍박스에 드랍되었을때 드랍박스 안으로 들어가도록 하기
+    // 드래그 앤 드랍 이후 드랍박스 안에만 컨텐츠가 있고 원래 자리에 있던애는 없애기
+
+    // step 1 set variables
+
+    let dragBox = document.querySelectorAll(".dragable");
+    //console.log(dragBox);
+    let dropBox = document.querySelector("#dropBox");
+    //console.log(dropBox);
+
+    //step 2 connect event
+    dragBox.forEach(
+      function(idx){
+        idx.addEventListener("dragstart", dragStart);
+        idx.addEventListener("dragend", dragEnd);
+      }
+    )
+
+    dropBox.addEventListener("dragover", function(e){
+      e.preventDefault(); //기본 동작방지
+      }
+    );
+
+    dropBox.addEventListener("drop", function(e){
+      e.preventDefault(); //기본 동작방지
+      let dropedContent = document.querySelector(".graped");
+      console.log(dropedContent);
+      dropBox.appendChild(dropedContent);
+      }
+    );
+
+    //step 3 function difine
+    function dragStart(){
+      this.classList.add("graped")
+      //console.log("connected")
+    }
+    
+    function dragEnd(){
+      this.classList.remove("graped")
+      //console.log("connected")
+      //dropBox.appendChild(this);
+    }
+
+
+  </script>
+</body>
+</html>

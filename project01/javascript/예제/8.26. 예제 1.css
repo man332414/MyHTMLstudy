@@ -1,0 +1,27 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+.tab{
+  display: inline-block;
+  background-color: aquamarine;
+  width: 100px;
+  height: 50px;
+  text-align: center;
+  align-content: center;
+  cursor:pointer;
+  border: 1px solid;
+}
+
+#contentContainer{
+  border: 1px solid;
+  height: 50px;
+}
+
+.active{
+  background-color: royalblue;
+}

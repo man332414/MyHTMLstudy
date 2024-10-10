@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+/*라디오 버튼 선택*/
+#a,#b,#c,#d, #e{
+    display: none; 
+}
+
+#tab_box{
+    width: 60%;
+    border: 1px solid red;
+    margin: 0 auto;
+}
+#tab_button{
+    font-size: 0px;
+}
+
+#tab_button label{
+    width: 25%;
+    display: inline-block;
+    font-size: 16px;
+    color: white;
+    background-color: blue;
+    padding: 20px 0;
+}
+
+/* 기능부 */
+.all {display: none;}
+#a:checked ~ #tab_box #tab_content .a{
+    display: block;
+}
+#b:checked ~ #tab_box #tab_content .b{
+    display: block;
+}
+#c:checked ~ #tab_box #tab_content .c{
+    display: block;
+}
+#d:checked ~ #tab_box #tab_content .d{
+    display: block;
+}
+#e:checked ~ #tab_box #tab_content .all{
+    display:block;
+}
+
+#a:checked ~ #tab_box #tab_button .a{
+    background-color: pink;
+}
+#b:checked ~ #tab_box #tab_button .b{
+    background-color: pink;
+}
+#c:checked ~ #tab_box #tab_button .c{
+    background-color: pink;
+}
+#d:checked ~ #tab_box #tab_button .d{
+    background-color: pink;
+}
+#e:checked ~ #tab_box #tab_button .e{
+    background-color: pink;
+}
+
+.a,.b,.c,.d,.e{
+    transition: all 2s;
+}

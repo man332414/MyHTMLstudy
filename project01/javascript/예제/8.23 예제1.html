@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>색깔 바꾸기</title>
+  <style>
+    .container{
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform:translate(-50%, -50%);
+      text-align: center;
+    }
+    #informBox{
+      border: 1px solid;
+      width: 470px;
+      border-radius: 10px;
+      background-color: black;
+      margin: 0 auto;
+    }
+    h1{
+      padding: 0 20px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 20px;
+      color: white;
+    }
+    #changeBtn{
+      text-align: center;
+      width: 100px;
+      font-weight: 700;
+      border: 5px solid;
+      padding: 7px;
+      margin: 20px auto;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div id="informBox">
+      <h1>background color : <span id="changeText">white</span></h1>
+    </div>
+    <button id="changeBtn">CHANGE</button>
+  </div>
+  <div id="colorlist">
+  </div>
+  <script>
+    let cBtn = document.querySelector("#changeBtn");
+    cBtn.addEventListener("click", colorChange);
+
+    function colorChange(){ // 백그라운드 색상 랜덤으로 바뀌는거 구현
+      let ranNum = [];
+      ranNum[0] = Math.floor(Math.random() * 255);
+      ranNum[1] = Math.floor(Math.random() * 255);
+      ranNum[2] = Math.floor(Math.random() * 255);
+      ranNum[3] = Number(Math.random()*0.9+0.1);
+        document.body.style.backgroundColor = `rgba(${ranNum[0]}, ${ranNum[1]}, ${ranNum[2]}, ${ranNum[3]})`;
+        textChange(ranNum[0], ranNum[1], ranNum[2], ranNum[3]);
+      }
+    function textChange(a, b, c, d){ // 색상이 변함에 따라 #changeText에 있는 글자도 색상으로 바뀌기
+      let sText = document.querySelector("#changeText");
+      //console.log(sText);
+      sText.style.color = `rgba(${a}, ${b}, ${c})`;
+      let changedColor = `rgba(${a}, ${b}, ${c}, ${d.toFixed(1)})`
+      sText.innerHTML = changedColor;
+      switch(changedColor){
+        case("rgba(255, 255, 255, 1)") : sText.innerHTML = "white";
+        break;
+        case("rgba(255, 0, 0, 1)") : sText.innerHTML = "red";
+        break;
+        case("rgba(0, 255, 0, 1)") : sText.innerHTML = "green";
+        break;
+        case("rgba(0, 0, 255, 1)") : sText.innerHTML = "blue";
+        break;
+        case("rgba(0, 0, 0, 1)") : sText.innerHTML = "black";
+        break;
+      }      
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+*{
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+}
+
+/* 컨테이너 설정 */
+.container{
+  width: 62%; /* 좌우 여백 부여 */
+  margin: 0 auto; /* 중앙정렬 */
+}
+
+/* 탭 스타일 부여 */
+#tabs{
+  display: flex; /* 쌓인 블록요소 횡으로 펼치기 */
+  width: 53%; /* 너비 설정 */
+  margin: 0 auto; /* 중앙 정렬 */
+  margin-top: 50px; /* 탭 상단 공백 설정 */
+  margin-bottom: 50px; /* 탭 하단 공백 설정 */
+  justify-content: space-between;  /* 요소별 배분정렬 */
+  cursor:pointer; /* 커서 올릴 시 클릭 가능한요소로 표시 */
+  color: lightgrey; /* 눌리기 전 색상 설정 */
+  /* border: 1px solid; */
+}
+
+.active{ /* 클릭 되었을 때 탭 스타일*/
+  color: black;
+}
+
+#items{ /* 아이템들 블록요소 횡으로 펼치기  */
+  display: flex;
+  flex-wrap: wrap; /* 펼친 이후 부모요소를 넘어가는 자식들은 줄바꿈 */
+}
+
+.productBox{ /* 상품 박스들 크기지정 */
+  width: 292.5px;
+  height: 400px;
+  padding: 0 15px;
+  position:relative; /* 플로팅 글자를 띄우기 위함 */
+}
+
+.imgBox img{ /* 이미지 박스 크기 조정 */
+  width: 100%;
+  height: 260px;
+}
+
+.new{ /* 플로팅 글자 중 new 스타일 설정 */
+  position: absolute;/* 플로팅 글자 띄우기 */
+  background-color: white;
+  top: 5%;
+  padding: 3px 20px;
+}
+
+.sale{ /* 플로팅 글자 중 sale 스타일 설정 */
+  position: absolute; /* 플로팅 글자 띄우기 */
+  background-color: black;
+  color:white;
+  top: 5%;
+  padding: 3px 20px;
+}
+
+.starPoint i{ /* 별점 크기 조절 */
+  font-size: small;
+}
+.starPoint .fa-solid{ /* 노랑별 만들기 */
+  color: gold;
+}

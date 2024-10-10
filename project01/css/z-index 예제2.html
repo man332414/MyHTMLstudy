@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>stack order2</title>
+  <style>
+    *{
+      padding: 0;
+      margin: 0;
+    }
+    .box-group{
+      display:flex;
+    }
+    .box-group .box{
+      width: 100px;
+      height: 100px;
+      background: royalblue;
+      border:4px dashed lightgray;
+      border-radius: 10px;
+      font-size:30px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      margin: -30px;
+    }
+    .box:hover{
+      z-index: 100;
+    }
+    .box1{
+      z-index: 5;
+    }
+    .box2{
+      z-index: 4;
+    }
+    .box3{
+      z-index: 3;
+    }
+    .box4{
+      z-index: 2;
+    }
+    .box5{
+      z-index: 5;
+    }
+  </style>
+</head>
+<body>
+  <div class="box-group">
+    <div class="box box1">1</div>
+    <div class="box box2">2</div>
+    <div class="box box3">3</div>
+    <div class="box box4">4</div>
+    <div class="box box5">5</div>
+  </div>
+</body>
+</html>

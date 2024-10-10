@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+    /* pc모니터 규격 */
+    /* min-width : 요소의 최소 너비를 설정합니다. 지정한 값보다 더 좁아지지 않도록 보장 */
+    @media screen and (min-width: 1024px) {
+      body {
+        background-color: aquamarine;
+      }
+    }
+
+    /* 태블릿 규격 */
+    /* max-width : 요소의 최대 너비를 설정합니다. 지정한 값보다 더 넓어지지 않도록 제한 */
+    @media screen and (max-width: 1023px) {
+      body {
+        background-color: orange;
+      }
+    }
+
+    /* 모바일 규격 */
+    @media screen and (max-width: 540px) {
+      body {
+        background-color: pink;
+      }
+    }
+  </style>
+</head>
+<body>
+
+</body>
+
+</html>

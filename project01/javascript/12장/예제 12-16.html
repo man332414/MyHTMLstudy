@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>anchors 컬렉션</title>
+</head>
+<body>
+  <a href="" name="html">HTML</a>
+  <a href="" name="css">CSS</a>
+  <a href="" name="js">JS</a>
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo01"></p>
+  <p id="demo02"></p>
+  <script>
+    function myFunction(){ 
+      let x = document.anchors.length;
+      document.querySelector("#demo01").innerHTML = "anchors.length : " +x;
+      let y = document.anchors[2].innerHTML;
+      document.querySelector("#demo02").innerHTML = "anchors[0].innerHTML : " +y;
+    }
+  </script>
+</body>
+</html>

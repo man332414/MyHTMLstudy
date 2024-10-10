@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>history 객체</title>
+</head>
+<body>
+  <button onclick="goBack()">back</button>
+  <button onclick="goForward()">Forward</button>
+  <script>
+    console.log(history.length);
+    function goBack(){
+      history.back();
+    }
+    function goForward(){
+      history.forward();
+    }
+  </script>
+</body>
+</html>

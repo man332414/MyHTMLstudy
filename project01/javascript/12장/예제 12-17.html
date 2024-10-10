@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>body1</title>
+</head>
+<body>
+  <!-- <button onclick="myFunction()">Try it</button> -->
+  <script>
+    window.setInterval(myFunction, 1000);
+    function myFunction(){ 
+      let ran1 = Math.random()*255;
+      let ran3 = Math.random()*255;
+      let ran2 = Math.random()*255;
+      let ran4 = Math.random();
+      document.body.style.backgroundColor = `rgba(${ran1},${ran2},${ran3},${ran4})`;
+    }
+  </script>
+</body>
+</html>

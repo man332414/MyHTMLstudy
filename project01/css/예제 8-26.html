@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>애니메이션의 진행방향 설정하기</title>
+  <style>
+    div{
+      width: 100px;
+      height: 50px;
+      background:red;
+      position:relative;
+      animation:boxmove 5s cubic-bezier(0.645, 0.045, 0.355, 1) infinite;
+    }
+    #box1{
+      animation-delay:3s;
+      animation-direction : reverse;
+    }
+    #box2{
+      animation-delay:5s;
+      animation-direction:alternate-reverse;
+    }
+    @keyframes boxmove{
+    from{left:0px;}
+    to{left:300px;}
+    }
+  </style>
+</head>
+<body>
+  <div id="box1">애니메이션박스1</div>
+  <div id="box2">애니메이션박스2</div>
+</body>
+</html>

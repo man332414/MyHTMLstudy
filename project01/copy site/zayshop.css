@@ -1,0 +1,305 @@
+*{
+  list-style: none;/*초기화*/
+  text-decoration: none;/*초기화*/
+  padding: 0px;/*초기화*/
+  margin: 0px;/*초기화*/
+  box-sizing: border-box;/*초기화*/
+  font-family: "Roboto", sans-serif;/*폰트 설정*/
+  font-weight: 300;/*폰트 설정*/
+  font-style: normal;/*폰트 설정*/
+}
+
+.container{
+  width: 70%;/*컨테이너 크기 설정*/
+  margin: 0 auto;/*컨테이너 중앙 정렬*/
+}
+
+section{
+  padding-bottom: 50px;/*섹션 별 간격 부여*/
+}
+
+.top_back{background-color: #212934;}/*맨 윗줄 배경색상부여*/
+
+span a:visited, #sns a:visited{color: #fff;}
+#nav a:visited{color: #212934;}
+
+a:active{color: aqua;}
+
+.nav_top{
+  color:white;/*맨 윗줄 글자색*/
+  display: flex;/*맨 윗줄 div 수평정렬*/
+  justify-content: space-between;/*수평정렬 후 균등분배*/
+  padding: 8px 15px;/*맨 윗줄 패딩 부여*/
+  font-size: small;/*폰트 사이즈 조절*/
+}
+
+#sns{
+  display: flex;/*sns 로고 수평정렬*/
+}
+
+.fa-brands{
+  margin: 0px 5px 0px 5px;/*sns 로고 간격 부여*/
+}
+
+.menu{/*최초 상단 메뉴 수직요소 수평전환 및 균등분배를 위해 설정했으나 페이지 내 같은 스타일 적용이 많아 필요한 곳에 추가적으로 적용함*/
+  display: flex;
+  justify-content: space-between;
+}
+
+#nav{ /*nav 간격 및 위치조절*/
+  width: 500px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;/*y축 중앙에 위치*/
+}
+
+.func_icon{
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 25px;/*아이콘 별 간격 설정*/
+}
+
+.badge_icon{
+  position: relative;/*배지 아이콘 위치 설정을 위한 position:relative 선언*/
+}
+
+.badge{/*배지 설정*/
+  background-color: #e9eef5;
+  padding: 0px 5px 0px 5px;
+  border-radius: 9px;
+  position: absolute;
+  top: -40%;
+  left: 45%;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.ins_img{
+  background-color: rgb(239, 239, 239);
+  }
+
+#headline{/*메인 글자 위치 정렬*/
+  margin: 0 auto;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+input[type="radio"]{
+  display: none;
+}
+
+ul#slider{
+  font-size:0px;
+}
+
+#slider_li{
+  position: relative;
+  width: 100%;
+  display: inline-block;
+  transition: all 2s;
+}
+
+li .slide{
+  width: 500px;
+}
+
+li label{
+  position:absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+li label.left{
+  left: 0;
+}
+li label.right{
+  right: 0;
+}
+
+li label i{
+  font-size: 150px;
+  color: #59ab6e;
+}
+
+#a:checked ~ #headline li{transform:translateX(0%)}
+#b:checked ~ #headline li{transform:translateX(-100%)}
+#c:checked ~ #headline li{transform:translateX(-200%)}
+
+div.silder_contant{
+  display: flex;
+}
+
+.slider_img img{
+  position:relative;
+  right: -60%;
+  top: 20px;
+}
+
+.slider_text{
+  position:relative;
+  left: 400px;
+  top: 300px;
+}
+
+.slider_text h1{
+  color: #59ab6e;
+  font-weight:300;
+}
+
+b{
+  font-weight: 500;
+}
+
+h1{
+  font-size: 48px;/*글자크기 맞춤*/
+}
+
+h3{
+  font-size:30px;/*글자크기 맞춤*/
+  margin: 5px 0px 15px 0px;/*글자 간격 맞춤*/
+}
+
+p{
+  font-size:18px;/*글자크기 맞춤*/
+}
+
+.three_dots{
+  display: flex;/*i태그로 옮겨온 dash3개 위치 및 색상 조정*/
+  justify-content: center;
+  background-color: rgb(239, 239, 239);/*섹션에 같이 포함 시키면 위치가 적절하지 않아 섹션 밖에서 작성함*/
+}
+#dot{
+  color: #59ab6e;
+  margin: -20px 5px 40px 5px;/*첫 섹션 안쪽에 있는 것 처럼 화면 구성*/
+}
+
+.section_head{
+  padding-top: 40px;/*각 섹션 제목위 여백 지정*/
+  text-align: center;/*중앙정렬*/
+}
+div.section_head>h1{
+  margin-bottom: 20px;/*메인글자 제외하고 섹션 별 제목 아래 여백 부여*/
+}
+
+.month_list{
+  display: flex;/*카테고리별 월 우수상품 가로정렬*/
+  justify-content: space-between; /*균등배분*/
+  text-align: center;/*텍스트 위치 정렬*/
+}
+
+#product1{
+  border-radius: 50%;/*원형 사진 삽입을 위해 background-image 삽입*/
+  width: 290px;
+  height: 290px;
+  background-image: url(../templatemo_559_zay_shop/assets/img/category_img_01.jpg);
+  background-size: 290px;
+  background-repeat: no-repeat;
+}
+
+#product2{
+  border-radius: 50%;
+  width: 290px;
+  height: 290px;
+  background-image: url(../templatemo_559_zay_shop/assets/img/category_img_02.jpg);
+  background-size: 290px;
+  background-repeat: no-repeat;
+}
+
+#product3{
+  border-radius: 50%;
+  width: 290px;
+  height: 290px;
+  background-image: url(../templatemo_559_zay_shop/assets/img/category_img_03.jpg);
+  background-size: 290px;
+  background-repeat: no-repeat;
+}
+
+.p_text{/*go shop 꾸미기*/
+  color: white;
+  background-color: #59ab6e;
+  width: 30%;
+  padding: 5px 0px 5px 0px;/*위아래 패딩 부여*/
+  border-radius: 5px;/*둥근 테두리 부여*/
+  margin: 15px auto;/*go shop 컨텐츠 중앙위치*/
+}
+
+.featured-product{
+  background-color: #e9eef5;/*섹션 배경색상 부여*/
+}
+
+#y_star{/*별점에 별 색상부여*/
+  color: #ede861;
+}
+
+#gray{/*처음에는 별점에 별 색상 부여만 하려고 했으나 물품 div 하단에 동일한 회색이 있어서 같이 사용함*/
+  color:#bcbcbc;
+}
+
+#f_product_box{/*각 물품 별 글자, 그림 블록 설정*/
+  background-color: white;
+  height: 460px;
+  width: 354px;
+  margin-top: 30px;/*섹션 제목과 일정 간격 부여*/
+}
+
+#f_product_box_text{/*텍스트 좌우 여백 설정*/
+  margin: 0px 10px 0px 10px;
+}
+
+footer{
+  background-color: #212934;/*배경색 설정*/
+  color: #cfd6e1;/*글자색 설정*/
+  padding-top: 40px;/*위 섹션과의 간격 설정*/
+}
+
+#footer_menu{
+  width:440px;
+  line-height: 37px;/*메뉴 별 줄간격 설정*/
+  margin-bottom: 40px;
+}
+
+#zayshop{/*샾 명칭 꾸미기*/
+  color: #59ab6e;
+  font-weight: 500;/*글자 굵기 조절*/
+}
+
+#sub{/*sns 주소 및 구독 div 상하 간격 부여*/
+  padding: 30px 0px 30px 0px;
+}
+
+#circle{ /*sns 원형 꾸미기*/
+  font-size: large;/*i요소 크기 설정*/
+  text-align: center;/*좌우 중앙 정렬*/
+  align-content: center;/*상하 중앙정렬*/
+  width: 50px;/*border 크기설정*/
+  height: 50px;/*border 크기설정*/
+  border: 1px solid #2d343f;/*border 색상 및 테두리 설정*/
+  border-radius: 50%;/*원형 보더 설정*/
+}
+
+#copyright{/*맨 밑 글자색 설정*/
+  color: #cfd6e1;
+  padding: 30px 0px 30px 0px;
+}
+
+#copyright_backcolor{/*footer와 함께 묶었을 때 다른 색상 부여가 곤란 하고 container설정으로 인해 원하는 부분까지 칠해지지 않을 것으로 판단하여 footer 밖에 따로 작성 및 색상부여 */
+  background-color: #1d242d;
+}
+
+input[placeholder]{/*email 입력공간 크기설정*/
+  width: 231px;
+  height: 41px;
+  background-color: #1d242d;
+  border:0px;
+}
+input[value]{/*제출버튼 꾸미기*/
+  width: 104px;
+  height: 41px;
+  color: #e9eef5;
+  background-color: #59ab6e;
+  border-radius: 0px 5px 5px 0px;
+}

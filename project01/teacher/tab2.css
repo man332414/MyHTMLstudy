@@ -1,0 +1,25 @@
+*{
+  padding: 0px;
+  margin:0px;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+div.parent{
+  position: relative;
+  border: 1px solid red;
+  /* text-align: center; */
+  height: 500px;
+  width: 500px;
+}
+
+.child{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px dashed yellow;
+  color:aliceblue;
+}

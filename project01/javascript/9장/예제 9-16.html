@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>콜백 함수</title>
+  <script>
+    function callBack(x){
+      for(var i = 0; i<=10; i++){
+        x(i);
+      }
+    }
+    var greeting = function(){
+      document.write("hello JavaScript World" +"<br>");
+    }
+
+    callBack(greeting);
+  </script>
+</head>
+<body>
+  <script>
+  </script>
+</body>
+</html>

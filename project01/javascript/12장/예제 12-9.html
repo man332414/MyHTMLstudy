@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>요소속성 바꾸기2</title>
+</head>
+<body>
+  <p id="demo">속성 바꾸기2 중 입니다</p>
+  <button onclick="changeColor()">Try it</button>
+  <script>
+    console.log(document.querySelector("p"))
+    function changeColor(){
+      document.querySelector("#demo").setAttribute("class","setAttr");
+      console.log(document.querySelector(".setAttr"))
+    }
+  </script>
+</body>
+</html>

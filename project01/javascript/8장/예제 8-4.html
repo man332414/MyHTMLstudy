@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>중첩 for문</title>
+  <script>
+    var output ="";
+
+    for(var i = 1; i <= 3; i++){
+      output += '<h3>=====' + i + '학년=====</h3>';
+
+      for(var j = 1; j <= 10; j++){
+        output += '<p>' + i + '학년' + j + '반</p>';
+      }
+    }
+    document.write(output);
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

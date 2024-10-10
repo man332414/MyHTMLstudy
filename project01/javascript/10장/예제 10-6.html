@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>new 객체 정의2</title>
+  <script>
+    function Car(model, speed, color){
+      this.model = model;
+      this.speed = speed;
+      this.color = color;
+      this.break = function(){
+        this.speed -= 10;
+      };
+      this.accel=function(){
+        this.speed += 10;
+      };
+    }
+
+    myCar = new Car("BMW", 100, "black");
+    delete myCar.color;
+    document.write("내차의 색상 : " + myCar.color + '<br>');
+  </script>
+</head>
+<body>
+  
+</body>
+</html>

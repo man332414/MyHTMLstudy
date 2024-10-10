@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <script src="https://kit.fontawesome.com/c53a51a6e0.js" crossorigin="anonymous"></script>
+  <title>연습문제 무지개 와따가따 반복시키기</title>
+  <style> 
+    .box{
+      border: 1px dotted black;
+      padding: 10px 0px 10px 0px;
+      width: 400px;
+      height: 700px;
+    }
+    .box > div{
+      width: 50px;
+      height:50px;
+      margin-bottom: 10px;
+      border-radius: 100%;
+      position:relative;
+      animation-name:rainbow;
+      animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
+      animation-iteration-count: infinite;
+      animation-fill-mode: none;
+      animation-direction: alternate;
+      display:inline-block;
+    }
+    .bod1{
+      background-color: red;
+      animation-duration: 0.3s;
+    }
+    .bod2{
+      background-color: orange;
+      animation-duration: 0.6s;
+    }
+    .bod3{
+      background-color:yellow;
+      animation-duration: 0.9s;
+    }
+    .bod4{
+      background-color: green;
+      animation-duration: 1.2s;
+    }
+    .bod5{
+      background-color: blue;
+      animation-duration: 1.5s;
+    }
+    .bod6{
+      background-color: navy;
+      animation-duration: 1.8s;
+    }
+    .bod7{
+      background-color: purple;
+      animation-duration: 2.1s;
+    }
+    @keyframes rainbow{
+      from{top:650px;}
+      to{top: 10px;}
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="bod1"></div>
+    <div class="bod2"></div>
+    <div class="bod3"></div>
+    <div class="bod4"></div>
+    <div class="bod5"></div>
+    <div class="bod6"></div>
+    <div class="bod7"></div>
+
+  </div>
+</body>
+</html>

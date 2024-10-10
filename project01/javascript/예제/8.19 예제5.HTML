@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <title>8.19. 예제 5 (출석부)</title>
+  <script>
+    let student = new Array
+    student[0] = "김철수";
+    student[1] = "박말자";
+    student[2] = "안영수";
+    student[3] = "홍길동";
+
+    student.push("나전학")
+
+    function d_student(){
+      let delete_student = prompt("삭제할 학생 이름을 입력하세요","");
+      let index_D = student.indexOf(delete_student);
+      if(index_D !== -1){
+        student.splice(index_D,1);
+        alert("삭제되었습니다.");
+      } else{
+        alert("그런학생 없습니다");
+      }
+    }
+
+    function f_student(){
+      let find_student = document.querySelector("#find").value;
+      let index_F = student.indexOf(find_student);
+      
+      if (index_F !== -1) {
+        document.querySelector("#f_std").innerHTML=find_student + " 학생은 " + (index_F+1) + "번 입니다.";
+      } else {
+        document.querySelector("#f_std").innerHTML=find_student+" 학생은 우리반에 없습니다.";
+      }
+      document.querySelector("#find").value="";
+    }
+    console.log(student.sort());
+    //document.querySelector("#std").innerHTML=student;
+  </script>
+</head>
+
+<body>
+  <button onclick="d_student()">학생 지우기</button>
+  <input type="text" name="" id="find">
+  <button onclick="f_student()">찾기</button>
+  <p id="f_std"></p>
+  <!-- <p id="std"></p> -->
+</body>
+
+</html>

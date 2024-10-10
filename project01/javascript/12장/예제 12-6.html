@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>form[]</title>
+</head>
+<body>
+  anchors
+  layers
+  images
+  <form id="fm1">
+    <input type="text" name="fname" value="Donald"><br>
+    <input type="text" name="lname" value="Duck"><br>
+    <input type="submit" value="Submit">
+  </form>
+  <p>form elements</p>
+  <button onclick="myFunction()">Try it</button>
+  <p id="demo"></p>
+  <script>
+    function myFunction(){
+      let x = document.getElementById("fm1");
+      let text ="";
+      let i
+      for(i=0; i<x.length;i++){
+        text += x.elements[i].value + "<br>";
+      }
+      document.getElementById("demo").innerHTML = text;
+    }
+  </script>
+</body>
+</html>

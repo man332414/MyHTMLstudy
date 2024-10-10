@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>RegExp 객체 메서드_표현식_활용</title>
+</head>
+<body>
+  <form action="#" name="calculator">
+    주민등록번호 : <input type="text" name="number1" size="14">
+  </form>
+  <button onclick="ju_seacrh()">검색</button>
+  <p id="demo"></p>
+  
+  <script>
+    function ju_seacrh(){
+      let x = calculator.number1.value;
+      let ptn01 = /\d{6}-[12]\d{6}/;
+      if(ptn01.test(x)){
+        document.querySelector("#demo").innerHTML = ptn01.exec(x);
+        console.log(ptn01.exec(x));
+      }
+    }
+  </script>
+</body>
+</html> 

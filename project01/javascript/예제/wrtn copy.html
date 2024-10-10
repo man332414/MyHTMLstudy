@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자동차 속도 애니메이션</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* 스크롤바 숨기기 */
+        }
+        #car {
+            position: absolute;
+            width: 100px; /* 자동차 이미지의 너비 */
+            transition: transform 0.2s ease; /* 부드러운 위치 이동 애니메이션 */
+        }
+    </style>
+</head>
+<body>
+    <h1>자동차 속도 애니메이션</h1>
+    <div id="carInfo"></div>
+    <img id="car" src="./car-move.png" alt="Car Image" style="display: none;">
+    
+    <button id="accelerateBtn">가속</button>
+    <button id="brakeBtn">감속</button>
+
+    <script>
+        var myCar = {
+            type: "hyundai YF-sonata",
+            color: "gray",
+            speed: 0,
+            position: 0,
+            break: function() {
+                this.speed -= 10;
+                if (this.speed < 0) this.speed = 0; // 속도는 0 이하가 되지 않도록
+                this.updateInfo();
+                this.moveCar();
+            },
+            accel: function() {
+                this.speed += 10;
+                this.updateInfo();
+                this.moveCar();
+            },
+            updateInfo: function() {
+                document.getElementById("carInfo").innerHTML = 
+                    "myCar : " + this.type + " 색상 : " + this.color + " 속력 : " + this.speed;
+            },
+            moveCar: function() {
+                this.position += this.speed * 0.1; // 속도에 따라 위치 이동
+                document.getElementById("car").style.transform = "translateX(" + this.position + "px)";
+            }
+        };
+
+        // 차 정보 초기 표시
+        myCar.updateInfo();
+
+        // 이미지 경로 설정
+        document.getElementById("car").style.display = "block"; // 이미지 표시
+
+        // 버튼 클릭 이벤트 리스너 추가
+        document.getElementById("accelerateBtn").addEventListener("click", function() {
+            myCar.accel();
+        });
+
+        document.getElementById("brakeBtn").addEventListener("click", function() {
+            myCar.break();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <title>undefined 매개변수에 값 할당하기</title>
+  <script>
+    function print(fruit, count){
+      if(count==undefined){
+        count=10;
+        document.write(fruit+"가 "+count+"개 있습니다.");
+      } else{ 
+      document.write(fruit+"가 "+count+"개 있습니다.");
+    }
+    }
+  </script>
+</head>
+<body>
+  <script>
+    print("사과",'수천');
+  </script>
+</body>
+</html>
